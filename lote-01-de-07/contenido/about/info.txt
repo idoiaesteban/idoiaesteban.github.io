@@ -1,0 +1,56 @@
+# =====================================================================
+#  ABOUT  ·  cada dato relleno es una línea en la web (editado con el gestor)
+# =====================================================================
+nombre: Idoia Esteban Galván
+subtitulo: 
+ubicacion: 
+email: ido.idoia@gmail.com
+telefono: (+34) 653 719 740
+instagram: @idoesteban
+imdb: 
+showreel: 
+nombre_tamano: 30
+nombre_tamano_movil: 17
+nombre_espaciado: -0.01
+nombre_peso: 900
+contraste_umbral: 0.85
+contraste_grano: 0
+parrilla_hilo: 5
+parrilla_texto_tamano: 13
+parrilla_nombre_caja: si
+parrilla_texto_fuente: arial
+parrilla_nombre_caja_letra: #ffffff
+delfines_duracion: 0.75
+delfines_quedarse: 0.5
+delfines_inicio: no
+delfines_espera: 300
+delfines_apertura: 59
+delfines_giro: 640
+delfines_gravedad: 675
+delfines_cantidad: 65
+delfines_tamano: 62
+delfines_potencia: 550
+delfines_angulo: 47
+parrilla_texto_peso: 500
+franja: no
+titulo_fuente: arial
+titulo_peso: 700
+fuente: AlteHaasGroteskRegular | altehaasgroteskregular.ttf
+menu_peso: 400
+delfines_contact: no
+menu_fuente: arial
+menu_mayusculas: si
+trailers_importados: 2026-10-20-r2-v3
+---
+HELLÖ!
+
+I'm a production designer based in Madrid and Bilbao (Basque Country).
+I was born in Bilbao in 1980, and I' have a degree in Fine Arts.
+I work as production designer since 2007, mostly on films and series.
+
+I´m member of the Academy of Cinematographic Arts and Sciences of Spain, and AEDAA (Spanish Association of the Audiovisual Art Department).
+
+In this site you can see a selection of my work.
+Please, feel free to contact :>
+
+Enjoy!
