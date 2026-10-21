@@ -11,7 +11,7 @@ director: Kike Maíllo
 productora: Sabado Time/Netflix
 mostrar_en_inicio: no
 encuadre_movil: 54% 50%
-portada: 03.jpg
+portada: 02.jpg
 ---
 `,
       "archivos": [
@@ -989,4 +989,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610211052 */
+/* gestor: 202610211454 */
