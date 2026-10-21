@@ -978,7 +978,7 @@ delfines_contact: no
 menu_fuente: arial
 menu_mayusculas: si
 trailers_importados: 2026-10-20-r2-v3
-logo_borde: 2
+logo_borde: 0
 ---
 HELLÖ!
 
@@ -1003,4 +1003,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610212123 */
+/* gestor: 202610212124 */
