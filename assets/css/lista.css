@@ -113,9 +113,8 @@
   .modo-cartel .con-cartel.visible:is(:hover, :focus-visible) .celda__fondo { filter: brightness(1); }
 }
 
-/* Texto: Título / directed by … / produced by …   y el año abajo.
-   Siempre visible, en bloque abajo a la DERECHA, al ras del borde
-   (las líneas alineadas a la izquierda dentro del bloque). */
+/* Texto: Título / directed by … / produced by … y el año abajo.
+   La columna derecha conserva el bloque junto al borde derecho. */
 .modo-cartel .celda__texto {
   display: flex; flex-direction: column; justify-content: flex-end;
   gap: var(--cartel-texto-hueco);
@@ -130,6 +129,16 @@
   letter-spacing: .01em;
 }
 .modo-cartel .celda__ficha span, .modo-cartel .celda__ano { display: block; }
+/* En escritorio, la posición en la rejilla decide el lado: si una película
+   cambia de lugar, su texto cambia con ella. En la izquierda, el bloque va
+   junto al borde izquierdo y sus líneas quedan alineadas a la derecha. */
+@media (min-width: 701px) {
+  .lista-cine.modo-cartel > .celda-proyecto:nth-child(odd):not(.sin-portada) .celda__texto {
+    left: var(--cartel-texto-margen);
+    right: auto;
+    text-align: right;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
   .modo-cartel .celda-proyecto__txt { display: flex; }
 }
