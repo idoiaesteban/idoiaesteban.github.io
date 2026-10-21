@@ -1004,8 +1004,14 @@ Enjoy!
 2007 | No digas nada | Props | Felipe Jiménez Luna | films |  | 
 2007 | Hotel Tívoli | Props | Antón Reixa | films |  | 
 2016 | Contratiempo | Set decorator (Bizkaia) | Oriol Pauló | films |  | 
+2018 | Just Eat |  | Maria Sosa | comercials |  | 
+2017 | Aquarius |  | Javier Tles | comercials |  | 
+2010 | El país  |  | Nacho Vigalondo | comercials |  | 
+2010 | Peugeot |  | Miguel Angulo | comercials |  | 
+2009 | Shakleton |  | Toño Mayor | comercials |  | 
+2012 | FAD |  | Toño Mayor | comercials |  | 
 `,
     "archivos": []
   }
 };
-/* gestor: 202610212156 */
+/* gestor: 202610212206 */
