@@ -568,31 +568,32 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Rainbow_Trailer_ofici
       "carpeta": "salitre",
       "info": `titulo: Salitre
 año: 2027
-labor: 
+labor: Coming soon
 director: Norma Vila
 productora: Pris&Batty / Bondi
 mostrar_en_inicio: si
-encuadre_movil: 40% 50%
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Salitre%20-%20Trailer%20%5BgTY3GEnZl6M%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 40% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
-      {"f":"01.jpg","w":1497,"h":1080},
-      {"f":"02.jpg","w":2000,"h":1082},
-      {"f":"03.jpg","w":1920,"h":1038},
-      {"f":"04.jpg","w":1980,"h":1400},
-      {"f":"05.jpg","w":2000,"h":1256},
-      {"f":"06.jpg","w":1980,"h":1400},
-      {"f":"07.jpg","w":1347,"h":1400},
-      {"f":"08.jpg","w":1980,"h":1400},
-      {"f":"09.jpg","w":1851,"h":1400},
-      {"f":"10.jpg","w":1980,"h":1400},
-      {"f":"11.jpg","w":2000,"h":1322},
-      {"f":"12.jpg","w":2000,"h":1305},
-      {"f":"13.jpg","w":2000,"h":937},
-      {"f":"14.jpg","w":1916,"h":851},
+      {"f":"01.jpg","w":2600,"h":1397},
+      {"f":"02.jpg","w":1497,"h":1080},
+      {"f":"03.jpg","w":2000,"h":1082},
+      {"f":"04.jpg","w":1920,"h":1038},
+      {"f":"05.jpg","w":1980,"h":1400},
+      {"f":"06.jpg","w":2000,"h":1256},
+      {"f":"07.jpg","w":1980,"h":1400},
+      {"f":"08.jpg","w":1347,"h":1400},
+      {"f":"09.jpg","w":1980,"h":1400},
+      {"f":"10.jpg","w":1851,"h":1400},
+      {"f":"11.jpg","w":1980,"h":1400},
+      {"f":"12.jpg","w":2000,"h":1322},
+      {"f":"13.jpg","w":2000,"h":1305},
+      {"f":"14.jpg","w":2000,"h":937},
       {"f":"15.jpg","w":1916,"h":851},
-      {"f":"16.jpg","w":1867,"h":1400},
+      {"f":"16.jpg","w":1916,"h":851},
       {"f":"17.jpg","w":1867,"h":1400},
       {"f":"18.jpg","w":1867,"h":1400},
       {"f":"19.jpg","w":1867,"h":1400},
@@ -607,8 +608,8 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Salitre%20-%20Trailer
       {"f":"28.jpg","w":1867,"h":1400},
       {"f":"29.jpg","w":1867,"h":1400},
       {"f":"30.jpg","w":1867,"h":1400},
-      {"f":"31.jpg","w":1050,"h":1400},
-      {"f":"32.jpg","w":1867,"h":1400},
+      {"f":"31.jpg","w":1867,"h":1400},
+      {"f":"32.jpg","w":1050,"h":1400},
       {"f":"33.jpg","w":1867,"h":1400},
       {"f":"34.jpg","w":1867,"h":1400},
       {"f":"35.jpg","w":1867,"h":1400},
@@ -622,15 +623,15 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Salitre%20-%20Trailer
       {"f":"43.jpg","w":1867,"h":1400},
       {"f":"44.jpg","w":1867,"h":1400},
       {"f":"45.jpg","w":1867,"h":1400},
-      {"f":"46.jpg","w":1050,"h":1400},
-      {"f":"47.jpg","w":1867,"h":1400},
-      {"f":"48.jpg","w":1050,"h":1400},
-      {"f":"49.jpg","w":1867,"h":1400},
+      {"f":"46.jpg","w":1867,"h":1400},
+      {"f":"47.jpg","w":1050,"h":1400},
+      {"f":"48.jpg","w":1867,"h":1400},
+      {"f":"49.jpg","w":1050,"h":1400},
       {"f":"50.jpg","w":1867,"h":1400},
       {"f":"51.jpg","w":1867,"h":1400},
       {"f":"52.jpg","w":1867,"h":1400},
       {"f":"53.jpg","w":1867,"h":1400},
-      {"f":"portada.jpg","w":2600,"h":1397}]
+      {"f":"54.jpg","w":1867,"h":1400}]
     },
     {
       "carpeta": "si-yo-fuera-rico",
@@ -837,7 +838,7 @@ portada: 01.jpg
       "info": `titulo: Vidal
 año: 2019
 labor: 
-director: 
+director: Eduardo Casanova
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Dipper%20Experiencia%20N%C2%BA%20263%20-%20The%20Implosion%20(Spot%20Dipper%20Ball%202019)%20%5BsvadQ81RYdY%5D_WEB_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Mi%20Querido%20Watson%20-%20Spot%E2%A7%B8Anuncio%20Golosinas%20Vidal%20Dipper%20Experiencia%20N%C2%BA%20375%20%5ByssygR3t64Q%5D_WEB_WEB_WEB.mp4
@@ -890,6 +891,7 @@ director: Eduardo Casanova
 productora: The Stoat Fashion Film
 cliente: The Stoat
 mostrar_en_inicio: no
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -899,18 +901,6 @@ mostrar_en_inicio: no
       {"f":"04.jpg","w":1500,"h":844},
       {"f":"05.jpg","w":1900,"h":750},
       {"f":"06.jpg","w":742,"h":383}]
-    },
-    {
-      "carpeta": "stranger-things",
-      "info": `titulo: Stranger Things
-año: 
-labor: 
-director: 
-mostrar_en_inicio: no
-video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Leticia%20Sabater%20llega%20al%20Upside%20Down%20%EF%BD%9C%20Stranger%20Things%20%EF%BD%9C%20Netflix%20Espa%C3%B1a%20%5BmpXcM61rmuI%5D_WEB_WEB_WEB.mp4
----
-`,
-      "archivos": []
     },
     {
       "carpeta": "twyp",
@@ -924,6 +914,7 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/ANUNCIO%20TWYP%20%20I
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/TWYP%20%20%20Publicidad%20%20%20Eduardo%20Casanova%20%5B0mhJvMI8ls0%5D_WEB_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/TWYP%20%20%20Publicidad%20%20%20Eduardo%20Casanova%20%5Brh8lbgdzQLU%5D_WEB_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/TWYP%20-%20Publicidad%20-%20Eduardo%20Casanova%20%5BXrzVnebpR2g%5D_WEB_WEB_WEB.mp4
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -948,7 +939,7 @@ imdb:
 showreel: 
 nombre_tamano: 30
 nombre_tamano_movil: 17
-nombre_espaciado: -0.01
+nombre_espaciado: 0
 nombre_peso: 900
 contraste_umbral: 0.85
 contraste_grano: 0
@@ -998,9 +989,23 @@ Enjoy!
 #  con ficha propia (sin fotos). Una URL opcional enlaza directamente fuera.
 #  Una línea por trabajo: año | título | labor | director o cliente | sección | URL | vídeo
 # =====================================================================
-
+2007 | Hoy no se fia mañana sí |  | Francisco Avizanda | films |  | 
+2013 | Purgatorio |  | Pau Teixidor | films |  | 
+2014 | A escondidas |  | Mikel Rueda | films |  | 
+2013 | La buena hija |  | Javier Rebollo | films |  | 
+2015 | La matanza |  | Javier Rebollo | films |  | 
+2019 | El doble más quince |  | Mikel Rueda | films |  | 
+2020 | Way Down | Set Decorator | Jaume Balagueró | films |  | 
+2016 | Cuerpo de élite | Set decorator | Joaquín Mazón | films |  | 
+2011 | Atrapats | Art director | Miguel Puertas | films |  | 
+2010 | Cuatro estaciones | Art director | Marcel Barrena | films |  | 
+2010 | Trash | Art director | Carles Torras | films |  | 
+2007 | Dos rivales casi iguales | Asst. Set decorator | Miguel Ángel Buttini | films |  | 
+2007 | No digas nada | Props | Felipe Jiménez Luna | films |  | 
+2007 | Hotel Tívoli | Props | Antón Reixa | films |  | 
+2016 | Contratiempo | Set decorator (Bizkaia) | Oriol Pauló | films |  | 
 `,
     "archivos": []
   }
 };
-/* gestor: 202610212124 */
+/* gestor: 202610212156 */

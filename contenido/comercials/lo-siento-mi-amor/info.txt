@@ -5,4 +5,5 @@ director: Eduardo Casanova
 productora: The Stoat Fashion Film
 cliente: The Stoat
 mostrar_en_inicio: no
+portada: 01.jpg
 ---
