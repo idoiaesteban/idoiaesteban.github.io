@@ -964,12 +964,13 @@ franja: no
 titulo_fuente: arial
 titulo_peso: 700
 fuente: AlteHaasGroteskRegular | altehaasgroteskregular.ttf
-menu_peso: 400
+menu_peso: 900
 delfines_contact: no
-menu_fuente: arial
+menu_fuente: instrument-sans
 menu_mayusculas: si
 trailers_importados: 2026-10-20-r2-v3
 logo_borde: 0
+menu_cursiva: no
 ---
 HELLÖ!
 
@@ -1006,7 +1007,7 @@ Enjoy!
 2016 | Contratiempo | Set decorator (Bizkaia) | Oriol Pauló | films |  | 
 2018 | Just Eat |  | Maria Sosa | comercials |  | 
 2017 | Aquarius |  | Javier Tles | comercials |  | 
-2010 | El país  |  | Nacho Vigalondo | comercials |  | 
+2010 | El país |  | Nacho Vigalondo | comercials |  | 
 2010 | Peugeot |  | Miguel Angulo | comercials |  | 
 2009 | Shakleton |  | Toño Mayor | comercials |  | 
 2012 | FAD |  | Toño Mayor | comercials |  | 
@@ -1014,4 +1015,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610212206 */
+/* gestor: 202610212220 */

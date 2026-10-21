@@ -36,12 +36,13 @@ franja: no
 titulo_fuente: arial
 titulo_peso: 700
 fuente: AlteHaasGroteskRegular | altehaasgroteskregular.ttf
-menu_peso: 400
+menu_peso: 900
 delfines_contact: no
-menu_fuente: arial
+menu_fuente: instrument-sans
 menu_mayusculas: si
 trailers_importados: 2026-10-20-r2-v3
 logo_borde: 0
+menu_cursiva: no
 ---
 HELLÖ!
 
