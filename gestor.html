@@ -222,6 +222,8 @@ button { cursor: pointer; background: none; border: 0; }
 .bloque-titulo { font-size: 15px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--linea); }
 .preview-nombre { position: sticky; top: 82px; border: 1px solid var(--linea); border-radius: 12px; overflow: hidden; background: #111; }
 .preview-nombre iframe { display: block; width: 100%; height: min(52vw, 520px); min-height: 360px; border: 0; pointer-events: none; }
+.preview-nombre iframe#vistaLogo { height: 160px; min-height: 0; border-bottom: 1px solid var(--linea); }
+.preview-nombre iframe#vistaNombre { height: min(34vw, 350px); min-height: 240px; }
 .preview-nombre p { padding: 9px 12px; color: var(--suave); background: #fff; font-size: 12px; }
 
 /* ---- firma (detalle flotante, abajo a la derecha) ---- */
@@ -241,6 +243,7 @@ button { cursor: pointer; background: none; border: 0; }
   .editor-nombre { grid-template-columns: 1fr; }
   .preview-nombre { position: static; }
   .preview-nombre iframe { height: 410px; min-height: 0; }
+  .preview-nombre iframe#vistaNombre { height: 300px; min-height: 0; }
 }
   </style>
 </head>
@@ -294,7 +297,7 @@ button { cursor: pointer; background: none; border: 0; }
   <!-- Arrastrar un .zip de actualización a cualquier parte de la ventana -->
   <div class="soltar-zip" id="soltarZip">Suelta aquí el .zip con la actualización de la web</div>
 
-  <script src="assets/js/trailers-idoia.js?v=202610211454"></script>
+  <script src="assets/js/trailers-idoia.js?v=202610211809"></script>
   <script>
 /* =====================================================================
    GESTOR DE LA WEB
@@ -323,7 +326,7 @@ button { cursor: pointer; background: none; border: 0; }
   // Versión de este gestor. Si en GitHub hay un gestor más nuevo (por ejemplo,
   // una pestaña abierta desde antes de instalar una actualización), no deja
   // publicar: guardaría las cosas a la manera antigua.
-  const VERSION_GESTOR = "2026-10-20-r2-native-v3";
+  const VERSION_GESTOR = "2026-10-21-logo-borde-v1";
 
   /* Las secciones de la web. Si algún día se añade otra, se pone aquí y en
      assets/js/ajustes.js (AJUSTES.secciones) y en los generadores de datos. */
@@ -978,6 +981,11 @@ button { cursor: pointer; background: none; border: 0; }
           <label class="control-nombre opcion"><input type="checkbox" data-nombre="nombre_mayusculas"${(c.nombre_mayusculas || "si") === "si" ? " checked" : ""}> Convertir a mayúsculas</label>
           <p class="nota">Garet Book y Heavy ya están instaladas. Si subes otra fuente, se guardará con la web al publicar.</p>
 
+          <h3 class="bloque-titulo">Fondo negro del logo en parrillas y fichas</h3>
+          <p class="nota">Solo crece el fondo negro. Las letras blancas y el tamaño del logo se mantienen. En 0 tiene el aspecto original.</p>
+          ${cRango("logo_borde", "Grosor adicional", c.logo_borde ?? "0", 0, 10, 1, "")}
+          <button type="button" class="boton" data-accion="logo-restaurar">Volver al aspecto original (0)</button>
+
           <h3 class="bloque-titulo">Menú (production designer · work · films · contact…)</h3>
           <label class="control-nombre"><span>Tipografía</span><select data-nombre="menu_fuente">${opcionesFuente(c.menu_fuente || "arial")}</select></label>
           ${cRango("menu_tamano", "Tamaño", c.menu_tamano || "13", 8, 24, 1, "px")}
@@ -1008,7 +1016,9 @@ button { cursor: pointer; background: none; border: 0; }
           ${elegir("contraste_por", "Cómo decide", c.contraste_por || "pixel", [["pixel", "Según la imagen (como Photoshop, solo en las zonas claras)"], ["palabra", "Palabra entera"], ["letra", "Letra a letra"], ["texto", "Texto entero de un color"]])}
           ${rango("contraste_grano", "Ignorar textura fina (según la imagen)", c.contraste_grano || "1.5", 0, 4, 0.5, "px")}
         </div>
-        <div class="preview-nombre"><iframe id="vistaNombre" src="${urlVista("index.html")}" title="Vista previa de la cabecera"></iframe>
+        <div class="preview-nombre"><iframe id="vistaLogo" src="${urlVista("films.html")}" title="Vista previa del logo en Films"></iframe>
+          <p>Vista previa del logo en Films. Arrastra el control y observa el fondo negro aquí.</p>
+          <iframe id="vistaNombre" src="${urlVista("index.html")}" title="Vista previa de la cabecera"></iframe>
           <p>Vista previa del inicio. Los controles de arriba cambian el nombre sin tocar todavía la web pública.</p></div>
       </div>`;
   }
@@ -1168,6 +1178,7 @@ button { cursor: pointer; background: none; border: 0; }
   function aplicarVistaNombre() {
     if (pestana !== "nombre") return;
     mandarAVista("#vistaNombre");
+    mandarAVista("#vistaLogo");
   }
 
 
@@ -1176,11 +1187,13 @@ button { cursor: pointer; background: none; border: 0; }
   // controles aunque la página de dentro tarde en cargar o se recargue.
   let relojVista = null;
   function activarVistaNombre() {
-    const iframe = $("#vistaNombre");
-    if (iframe) {
+    const iframes = $$("#vistaNombre, #vistaLogo");
+    if (iframes.length) {
+      iframes.forEach((iframe) => {
       iframe.addEventListener("load", () => { aplicarVistaNombre(); setTimeout(aplicarVistaNombre, 300); });
+      });
       clearInterval(relojVista);
-      relojVista = setInterval(() => { if (pestana !== "nombre" || !$("#vistaNombre")) { clearInterval(relojVista); return; } aplicarVistaNombre(); }, 500);
+      relojVista = setInterval(() => { if (pestana !== "nombre" || !$("#vistaNombre") || !$("#vistaLogo")) { clearInterval(relojVista); return; } aplicarVistaNombre(); }, 500);
     }
     const subir = $("#subirFuenteNombre");
     if (subir) subir.addEventListener("change", (e) => {
@@ -1762,6 +1775,11 @@ button { cursor: pointer; background: none; border: 0; }
       pintar(); return;
     }
     if (acc === "nuevo") { nuevoProyecto(t.dataset.tipo); return; }
+    if (acc === "logo-restaurar") {
+      const control = $('[data-nombre="logo_borde"]');
+      if (control && control.value !== "0") { control.value = "0"; cambiarNombreControl(control); }
+      return;
+    }
     const elegidos = () => E.proyectos.filter((p) => seleccion.has(p.tipo + "/" + p.carpeta));
     if (acc === "sel-nada") { seleccion.clear(); pintar(); return; }
     if (acc === "sel-inicio-si" || acc === "sel-inicio-no") {

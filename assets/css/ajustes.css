@@ -59,6 +59,7 @@
   --logo-alto: 31px;
   --logo-ancho-movil: 212.5px;
   --logo-alto-movil: 18px;
+  --logo-fondo-trazo: 0px; /* 0 = fondo negro original del SVG */
 
   /* Las demás letras del menú (production designer, work, films, series,
      commercials, videoclips, contact) van todas con este tamaño        */

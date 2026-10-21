@@ -152,6 +152,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
    franja transparente inferior del SVG, manteniendo su proporción. */
 .menu__nombre.menu__nombre--logo { font-size: 30px; }
 .menu__logo { display: block; width: var(--logo-ancho); max-width: none; height: var(--logo-alto); object-fit: cover; object-position: left top; }
+svg.menu__logo { overflow: visible; }
+.menu__logo-fondo {
+  stroke: #000;
+  stroke-width: var(--logo-fondo-trazo);
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+}
 /* La sección activa queda bajo el centro del logo; los centros de las otras
    dos palabras coinciden con el principio y el final del nombre. */
 .menu__categorias {

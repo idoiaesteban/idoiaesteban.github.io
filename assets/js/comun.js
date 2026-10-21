@@ -76,7 +76,7 @@
       dentro = `
       <div class="menu__centro">
         ${PAGINAS_CON_LOGO.includes(pagina)
-          ? `<a class="menu__nombre menu__nombre--logo" href="index.html" data-dif-no="1"><img class="menu__logo" src="assets/img/idoia-logo.svg" alt="${htmlSeguro(nombre)}" width="2499" height="256" fetchpriority="high"></a>`
+          ? `<a class="menu__nombre menu__nombre--logo" href="index.html" data-dif-no="1" aria-label="${htmlSeguro(nombre)}"><img class="menu__logo" src="assets/img/idoia-logo.svg" alt="" width="2499" height="256" fetchpriority="high"></a>`
           : `<a class="menu__nombre" href="index.html">${htmlSeguro(nombre)}</a>`}
         ${categoriaProyecto
           ? `<a class="menu__donde" href="${htmlSeguro(categoriaProyecto.pagina)}">${htmlSeguro(categoriaProyecto.titulo)}</a>`
@@ -89,6 +89,23 @@
     nav.setAttribute("aria-label", "Menú principal");
     nav.innerHTML = dentro;
     document.body.prepend(nav);
+    // Conservamos el SVG original como imagen hasta tenerlo listo. Al insertarlo
+    // en línea podemos ensanchar únicamente su fondo negro desde el gestor.
+    const imagenLogo = nav.querySelector("img.menu__logo");
+    if (imagenLogo) fetch(imagenLogo.src)
+      .then((respuesta) => { if (!respuesta.ok) throw new Error("Logo no disponible"); return respuesta.text(); })
+      .then((texto) => {
+        const svg = new DOMParser().parseFromString(texto, "image/svg+xml").documentElement;
+        if (svg.namespaceURI !== "http://www.w3.org/2000/svg") return;
+        const fondo = svg.querySelector('path[fill="#000"]');
+        if (!fondo || !imagenLogo.isConnected) return;
+        fondo.classList.add("menu__logo-fondo");
+        svg.classList.add("menu__logo");
+        svg.setAttribute("preserveAspectRatio", "xMinYMin slice");
+        svg.setAttribute("aria-hidden", "true");
+        svg.setAttribute("focusable", "false");
+        imagenLogo.replaceWith(document.importNode(svg, true));
+      }).catch(() => { /* Si falla la carga, se conserva el logo original. */ });
     if (pagina === "inicio") {
       const boton = nav.querySelector(".menu__work");
       const opciones = nav.querySelector(".menu__opciones");
@@ -516,6 +533,8 @@
      función la usa la vista previa del gestor, en directo. */
   function aplicarCabecera(info, fuenteUrl) {
     const root = document.documentElement;
+    const grosorLogo = Number(info.logo_borde ?? 0);
+    root.style.setProperty("--logo-fondo-trazo", Number.isFinite(grosorLogo) && grosorLogo >= 0 && grosorLogo <= 10 ? (grosorLogo * 6) + "px" : "0px");
     const archivo = info.nombre_fuente_archivo || "";
     if (/^idoia-custom\.(woff2?|otf|ttf)$/.test(archivo)) {
       const formato = archivo.endsWith("woff2") ? "woff2" : archivo.endsWith("woff") ? "woff" : archivo.endsWith("otf") ? "opentype" : "truetype";
