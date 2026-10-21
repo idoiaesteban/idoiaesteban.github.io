@@ -1,5 +1,0 @@
-# =====================================================================
-#  FILMOGRAFÍA EXTRA  ·  trabajos que salen en la lista del about
-#  con ficha propia (sin fotos). Una URL opcional enlaza directamente fuera.
-#  Una línea por trabajo: año | título | labor | director o cliente | sección | URL | vídeo
-# =====================================================================
