@@ -3,7 +3,8 @@ año: 2023
 labor: 
 director: Lucía Alemany
 productora: Telecinco / Netflix
-mostrar_en_inicio: si
-encuadre_movil: 73% 50%
+mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Mari(Dos)%20(2023)%20Tr%C3%A1iler%20Oficial%20Espa%C3%B1ol%20%5BrI7OvhsKtKc%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 61% 50%
+portada: 01.jpg
 ---

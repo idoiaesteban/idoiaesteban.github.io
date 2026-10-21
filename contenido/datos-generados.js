@@ -11,7 +11,7 @@ director: Kike Maíllo
 productora: Sabado Time/Netflix
 mostrar_en_inicio: no
 encuadre_movil: 54% 50%
-portada: 02.jpg
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -37,7 +37,7 @@ director: Álvaro Fernández Armero
 productora: Nadie es perfecto / Netflix
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/A%201000km%20De%20La%20Navidad%20(2021)%20Netflix%20Tr%C3%A1iler%20Oficial%20Espa%C3%B1ol%20%5BCQG-6hpGvn4%5D_WEB_WEB_WEB.mp4
-encuadre_movil: 17% 50%
+encuadre_movil: 41% 50%
 portada: 42.jpg
 ---
 `,
@@ -114,9 +114,9 @@ labor:
 director: Paco León
 productora: Telecinco
 mostrar_en_inicio: no
-encuadre_movil: 57% 50%
-portada: 19.jpg
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Aida%20Y%20Vuelta%20%EF%BD%9C%20Tr%C3%A1iler%20Oficial%20HD.%20En%20cines%2030%20de%20enero.%20%5BO82ibLC4bmM%5D_WEB.mp4
+encuadre_movil: 60% 50%
+portada: 19.jpg
 ---
 `,
       "archivos": [
@@ -164,9 +164,9 @@ labor:
 director: Nacho Vigalondo
 productora: Sayaka / Netflix
 mostrar_en_inicio: si
-encuadre_movil: 38% 50%
-portada: 05.jpg
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/DANIELA%20FOREVER%20Tr%C3%A1iler%20Oficial%20Espa%C3%B1ol%20(2025)%20%5Bdbfo_r-694c%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 65% 50%
+portada: 05.jpg
 ---
 `,
       "archivos": [
@@ -322,8 +322,9 @@ labor: Design & Concept art in preproduction. Film nominated for Best Production
 director: Eduardo Casanova
 productora: Pokeepsie Films
 mostrar_en_inicio: no
-encuadre_movil: 39% 50%
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/LA%20PIEDAD%20-%20TR%C3%81ILER%20OFICIAL%20(HD)%20%5BZtSngOS_6mo%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 77% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -354,10 +355,10 @@ año: 2015
 labor: 
 director: Peris Romano
 productora: José Frade PC
-mostrar_en_inicio: si
-encuadre_movil: 66% 50%
-portada: 04.jpg
+mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Los%20Miercoles%20No%20Existen%20-%20Trailer%20largo%20HD%20%5Bn_qx0_l7S1I%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 37% 50%
+portada: 04.jpg
 ---
 `,
       "archivos": [
@@ -373,9 +374,10 @@ año: 2023
 labor: 
 director: Lucía Alemany
 productora: Telecinco / Netflix
-mostrar_en_inicio: si
-encuadre_movil: 73% 50%
+mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Mari(Dos)%20(2023)%20Tr%C3%A1iler%20Oficial%20Espa%C3%B1ol%20%5BrI7OvhsKtKc%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 61% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -401,9 +403,9 @@ labor:
 director: Eduardo Casanova
 productora: Pokeepsie Films
 mostrar_en_inicio: si
-encuadre_movil: 93% 50%
-portada: 03.jpg
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/PIELES%20I%20TR%C3%81ILER%20OFICIAL%20%5B8Ik0Lt8FFBA%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 50% 50%
+portada: 03.jpg
 ---
 `,
       "archivos": [
@@ -430,7 +432,7 @@ director: Curro Velázquez
 productora: Morena Films
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Que%20baje%20Dios%20y%20lo%20vea%20-%20Trailer%20(HD)%20%5BgTb0ApAlQ9c%5D_WEB_WEB_WEB.mp4
-encuadre_movil: 43% 50%
+encuadre_movil: 60% 50%
 portada: 17.jpg
 ---
 `,
@@ -702,8 +704,9 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Arde%20Madrid%EF%BC%9
 año: 2025
 labor: 
 director: Nacho Vigalondo / Claudia Costafreda
-mostrar_en_inicio: no
+mostrar_en_inicio: si
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Superestar%20%EF%BD%9C%20Tr%C3%A1iler%20Oficial%20%EF%BD%9C%20Netflix%20Espa%C3%B1a%20%5Bh75xrfq-SBE%5D_WEB_WEB_WEB.mp4
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -717,37 +720,37 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Superestar%20%EF%BD%9
       {"f":"08.jpg","w":1867,"h":1400},
       {"f":"09.jpg","w":2000,"h":1470},
       {"f":"10.jpg","w":1998,"h":1476},
-      {"f":"100.jpg","w":2600,"h":1298},
-      {"f":"101.jpg","w":2600,"h":1295},
-      {"f":"102.jpg","w":2600,"h":1293},
+      {"f":"100.jpg","w":2600,"h":1296},
+      {"f":"101.jpg","w":2600,"h":1296},
+      {"f":"102.jpg","w":2600,"h":1298},
       {"f":"103.jpg","w":2600,"h":1298},
-      {"f":"11.jpg","w":2600,"h":1296},
-      {"f":"12.jpg","w":2600,"h":1298},
-      {"f":"13.jpg","w":2600,"h":1300},
-      {"f":"14.jpg","w":2600,"h":1295},
-      {"f":"15.jpg","w":2000,"h":1125},
-      {"f":"16.jpg","w":1938,"h":1204},
-      {"f":"17.jpg","w":1960,"h":924},
-      {"f":"18.jpg","w":1956,"h":928},
-      {"f":"19.jpg","w":1942,"h":920},
-      {"f":"20.jpg","w":1996,"h":1470},
-      {"f":"21.jpg","w":1994,"h":1474},
-      {"f":"22.jpg","w":1994,"h":1470},
-      {"f":"23.jpg","w":1996,"h":1472},
-      {"f":"24.jpg","w":1760,"h":1296},
-      {"f":"25.jpg","w":2600,"h":1302},
-      {"f":"26.jpg","w":1950,"h":924},
-      {"f":"27.jpg","w":1244,"h":1462},
-      {"f":"28.jpg","w":2600,"h":1298},
-      {"f":"29.jpg","w":1752,"h":1456},
-      {"f":"30.jpg","w":1106,"h":1448},
-      {"f":"31.jpg","w":1938,"h":916},
-      {"f":"32.jpg","w":2600,"h":1295},
-      {"f":"33.jpg","w":2600,"h":1286},
-      {"f":"34.jpg","w":1867,"h":1400},
-      {"f":"35.jpg","w":1867,"h":1400},
-      {"f":"36.jpg","w":1867,"h":1400},
-      {"f":"37.jpg","w":1867,"h":1400},
+      {"f":"11.jpg","w":2600,"h":1298},
+      {"f":"12.jpg","w":2600,"h":1295},
+      {"f":"13.jpg","w":2600,"h":1293},
+      {"f":"14.jpg","w":2600,"h":1298},
+      {"f":"15.jpg","w":2600,"h":1296},
+      {"f":"16.jpg","w":2600,"h":1298},
+      {"f":"17.jpg","w":2600,"h":1300},
+      {"f":"18.jpg","w":2600,"h":1295},
+      {"f":"19.jpg","w":2000,"h":1125},
+      {"f":"20.jpg","w":1938,"h":1204},
+      {"f":"21.jpg","w":1960,"h":924},
+      {"f":"22.jpg","w":1956,"h":928},
+      {"f":"23.jpg","w":1942,"h":920},
+      {"f":"24.jpg","w":1996,"h":1470},
+      {"f":"25.jpg","w":1994,"h":1474},
+      {"f":"26.jpg","w":1994,"h":1470},
+      {"f":"27.jpg","w":1996,"h":1472},
+      {"f":"28.jpg","w":1760,"h":1296},
+      {"f":"29.jpg","w":2600,"h":1302},
+      {"f":"30.jpg","w":1950,"h":924},
+      {"f":"31.jpg","w":1244,"h":1462},
+      {"f":"32.jpg","w":2600,"h":1298},
+      {"f":"33.jpg","w":1752,"h":1456},
+      {"f":"34.jpg","w":1106,"h":1448},
+      {"f":"35.jpg","w":1938,"h":916},
+      {"f":"36.jpg","w":2600,"h":1295},
+      {"f":"37.jpg","w":2600,"h":1286},
       {"f":"38.jpg","w":1867,"h":1400},
       {"f":"39.jpg","w":1867,"h":1400},
       {"f":"40.jpg","w":1867,"h":1400},
@@ -759,57 +762,57 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Superestar%20%EF%BD%9
       {"f":"46.jpg","w":1867,"h":1400},
       {"f":"47.jpg","w":1867,"h":1400},
       {"f":"48.jpg","w":1867,"h":1400},
-      {"f":"49.jpg","w":2600,"h":1302},
-      {"f":"50.jpg","w":2600,"h":1300},
-      {"f":"51.jpg","w":2600,"h":1296},
-      {"f":"52.jpg","w":2600,"h":1304},
-      {"f":"53.jpg","w":1948,"h":1444},
-      {"f":"54.jpg","w":1867,"h":1400},
-      {"f":"55.jpg","w":1867,"h":1400},
-      {"f":"56.jpg","w":1867,"h":1400},
-      {"f":"57.jpg","w":1867,"h":1400},
+      {"f":"49.jpg","w":1867,"h":1400},
+      {"f":"50.jpg","w":1867,"h":1400},
+      {"f":"51.jpg","w":1867,"h":1400},
+      {"f":"52.jpg","w":1867,"h":1400},
+      {"f":"53.jpg","w":2600,"h":1302},
+      {"f":"54.jpg","w":2600,"h":1300},
+      {"f":"55.jpg","w":2600,"h":1296},
+      {"f":"56.jpg","w":2600,"h":1304},
+      {"f":"57.jpg","w":1948,"h":1444},
       {"f":"58.jpg","w":1867,"h":1400},
       {"f":"59.jpg","w":1867,"h":1400},
       {"f":"60.jpg","w":1867,"h":1400},
       {"f":"61.jpg","w":1867,"h":1400},
       {"f":"62.jpg","w":1867,"h":1400},
       {"f":"63.jpg","w":1867,"h":1400},
-      {"f":"64.jpg","w":2600,"h":1298},
-      {"f":"65.jpg","w":2600,"h":1296},
-      {"f":"66.jpg","w":2600,"h":1293},
-      {"f":"67.jpg","w":2600,"h":1295},
+      {"f":"64.jpg","w":1867,"h":1400},
+      {"f":"65.jpg","w":1867,"h":1400},
+      {"f":"66.jpg","w":1867,"h":1400},
+      {"f":"67.jpg","w":1867,"h":1400},
       {"f":"68.jpg","w":2600,"h":1298},
-      {"f":"69.jpg","w":2600,"h":1304},
-      {"f":"70.jpg","w":1898,"h":1384},
-      {"f":"71.jpg","w":1996,"h":1262},
-      {"f":"72.jpg","w":2000,"h":948},
-      {"f":"73.jpg","w":2002,"h":890},
-      {"f":"74.jpg","w":2600,"h":1298},
-      {"f":"75.jpg","w":2600,"h":1296},
-      {"f":"76.jpg","w":2600,"h":1296},
-      {"f":"77.jpg","w":2600,"h":1298},
-      {"f":"78.jpg","w":2600,"h":1293},
-      {"f":"79.jpg","w":2600,"h":1298},
-      {"f":"80.jpg","w":2600,"h":1298},
-      {"f":"81.jpg","w":2600,"h":1289},
-      {"f":"82.jpg","w":2600,"h":1303},
-      {"f":"83.jpg","w":2600,"h":1293},
-      {"f":"84.jpg","w":2600,"h":1296},
-      {"f":"85.jpg","w":2600,"h":1295},
-      {"f":"86.jpg","w":2600,"h":1295},
-      {"f":"87.jpg","w":1998,"h":1466},
-      {"f":"88.jpg","w":1998,"h":1470},
-      {"f":"89.jpg","w":2600,"h":1296},
-      {"f":"90.jpg","w":2600,"h":1302},
-      {"f":"91.jpg","w":2600,"h":1296},
-      {"f":"92.jpg","w":2600,"h":1302},
-      {"f":"93.jpg","w":2600,"h":1304},
-      {"f":"94.jpg","w":2600,"h":1300},
+      {"f":"69.jpg","w":2600,"h":1296},
+      {"f":"70.jpg","w":2600,"h":1293},
+      {"f":"71.jpg","w":2600,"h":1295},
+      {"f":"72.jpg","w":2600,"h":1298},
+      {"f":"73.jpg","w":2600,"h":1304},
+      {"f":"74.jpg","w":1898,"h":1384},
+      {"f":"75.jpg","w":1996,"h":1262},
+      {"f":"76.jpg","w":2000,"h":948},
+      {"f":"77.jpg","w":2002,"h":890},
+      {"f":"78.jpg","w":2600,"h":1298},
+      {"f":"79.jpg","w":2600,"h":1296},
+      {"f":"80.jpg","w":2600,"h":1296},
+      {"f":"81.jpg","w":2600,"h":1298},
+      {"f":"82.jpg","w":2600,"h":1293},
+      {"f":"83.jpg","w":2600,"h":1298},
+      {"f":"84.jpg","w":2600,"h":1298},
+      {"f":"85.jpg","w":2600,"h":1289},
+      {"f":"86.jpg","w":2600,"h":1303},
+      {"f":"87.jpg","w":2600,"h":1293},
+      {"f":"88.jpg","w":2600,"h":1296},
+      {"f":"89.jpg","w":2600,"h":1295},
+      {"f":"90.jpg","w":2600,"h":1295},
+      {"f":"91.jpg","w":1998,"h":1466},
+      {"f":"92.jpg","w":1998,"h":1470},
+      {"f":"93.jpg","w":2600,"h":1296},
+      {"f":"94.jpg","w":2600,"h":1302},
       {"f":"95.jpg","w":2600,"h":1296},
-      {"f":"96.jpg","w":2600,"h":1296},
-      {"f":"97.jpg","w":2600,"h":1296},
-      {"f":"98.jpg","w":2600,"h":1298},
-      {"f":"99.jpg","w":2600,"h":1298}]
+      {"f":"96.jpg","w":2600,"h":1302},
+      {"f":"97.jpg","w":2600,"h":1304},
+      {"f":"98.jpg","w":2600,"h":1300},
+      {"f":"99.jpg","w":2600,"h":1296}]
     },
   ],
   "comercials": [
@@ -821,6 +824,8 @@ labor:
 director: Miguel Angulo
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Feliz%20D%C3%ADa%20del%20Padre.mp4
+encuadre_movil: 18% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -836,6 +841,8 @@ mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Dipper%20Experiencia%20N%C2%BA%20263%20-%20The%20Implosion%20(Spot%20Dipper%20Ball%202019)%20%5BsvadQ81RYdY%5D_WEB_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Mi%20Querido%20Watson%20-%20Spot%E2%A7%B8Anuncio%20Golosinas%20Vidal%20Dipper%20Experiencia%20N%C2%BA%20375%20%5ByssygR3t64Q%5D_WEB_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/%E2%80%98El%20sabor%20m%C3%A1s%20inesperado%E2%80%99%2C%20de%20Mi%20Querido%20Watson%20para%20Vidal%20%5BurE4AQHbXs0%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 29% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -849,6 +856,8 @@ labor:
 director: Miguel Angulo
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/ASISA%20Irreemplazable%20-%20%20spot%2045%E2%80%9D%20%5BBFk-iYM8izM%5D_WEB.mp4
+encuadre_movil: 14% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -864,6 +873,8 @@ mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Copiloto%20Samsung%20-%20Tecnolog%C3%ADa%20Con%20Prop%C3%B3sito%20%5BysnWjDsooIY%5D_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Copiloto%20Samsung%20-%20Tecnolog%C3%ADa%20con%20Prop%C3%B3sito%20%5BJYMYWqMueys%5D_WEB_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Copiloto%20Samsung%20-%20Tencolog%C3%ADa%20con%20Prop%C3%B3sito%20%5B5kwsJYWQeLw%5D_WEB_WEB.mp4
+encuadre_movil: 51% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -921,7 +932,7 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/TWYP%20-%20Publicidad
   ],
   "videoclips": [
   ],
-  "home": [{"f":"ext-12.jpg","titulo":"Extraterrestre","tipo":"films","carpeta":"extraterrestre","ano":"2011","enInicio":true,"w":2000,"h":853,"encuadreMovil":"53% 50%"},{"f":"ext-13.jpg","titulo":"Extraterrestre","tipo":"films","carpeta":"extraterrestre","ano":"2011","enInicio":true,"w":2000,"h":852,"encuadreMovil":"53% 50%"},{"f":"salitre-01.jpg","titulo":"Salitre","ano":"2027","tipo":"films","carpeta":"salitre","enInicio":false,"w":2000,"h":1082},{"f":"daniela-forever-01.jpg","titulo":"Daniela Forever","ano":"2024","tipo":"films","carpeta":"daniela-forever","enInicio":true,"w":2600,"h":1080,"encuadreMovil":"67% 50%"},{"f":"rainbow-01.jpg","titulo":"Rainbow","ano":"2022","tipo":"films","carpeta":"rainbow","enInicio":false,"w":2600,"h":1466,"encuadreMovil":"28% 50%"},{"f":"rainbow-02.jpg","titulo":"Rainbow","ano":"2022","tipo":"films","carpeta":"rainbow","enInicio":false,"w":2600,"h":1459},{"f":"en-las-estrellas-01.jpg","titulo":"En las estrellas","ano":"2018","tipo":"films","carpeta":"en-las-estrellas","enInicio":true,"w":2000,"h":811,"encuadreMovil":"49% 50%"},{"f":"superestar-01.jpg","titulo":"Superestar","ano":"2025","tipo":"series","carpeta":"superestar","enInicio":true,"w":2600,"h":1296,"encuadreMovil":"51% 50%"},{"f":"superestar-02.jpg","titulo":"Superestar","ano":"2025","tipo":"series","carpeta":"superestar","enInicio":true,"w":2600,"h":1298,"encuadreMovil":"55% 50%"},{"f":"rainbow-03.jpg","titulo":"Rainbow","ano":"2022","tipo":"films","carpeta":"rainbow","enInicio":true,"w":2600,"h":1463},{"f":"en-las-estrellas-03.jpg","titulo":"En las estrellas","ano":"2018","tipo":"films","carpeta":"en-las-estrellas","enInicio":true,"w":2560,"h":1038}],
+  "home": [{"f":"ext-12.jpg","titulo":"Extraterrestre","tipo":"films","carpeta":"extraterrestre","ano":"2011","enInicio":true,"w":2000,"h":853,"encuadreMovil":"53% 50%"},{"f":"ext-13.jpg","titulo":"Extraterrestre","tipo":"films","carpeta":"extraterrestre","ano":"2011","enInicio":true,"w":2000,"h":852,"encuadreMovil":"55% 50%"},{"f":"salitre-01.jpg","titulo":"Salitre","ano":"2027","tipo":"films","carpeta":"salitre","enInicio":false,"w":2000,"h":1082},{"f":"daniela-forever-01.jpg","titulo":"Daniela Forever","ano":"2024","tipo":"films","carpeta":"daniela-forever","enInicio":true,"w":2600,"h":1080,"encuadreMovil":"67% 50%"},{"f":"rainbow-01.jpg","titulo":"Rainbow","ano":"2022","tipo":"films","carpeta":"rainbow","enInicio":false,"w":2600,"h":1466,"encuadreMovil":"28% 50%"},{"f":"rainbow-02.jpg","titulo":"Rainbow","ano":"2022","tipo":"films","carpeta":"rainbow","enInicio":false,"w":2600,"h":1459,"encuadreMovil":"51% 50%"},{"f":"en-las-estrellas-01.jpg","titulo":"En las estrellas","ano":"2018","tipo":"films","carpeta":"en-las-estrellas","enInicio":true,"w":2000,"h":811,"encuadreMovil":"49% 50%"},{"f":"superestar-01.jpg","titulo":"Superestar","ano":"2025","tipo":"series","carpeta":"superestar","enInicio":true,"w":2600,"h":1296,"encuadreMovil":"51% 50%"},{"f":"superestar-02.jpg","titulo":"Superestar","ano":"2025","tipo":"series","carpeta":"superestar","enInicio":true,"w":2600,"h":1298,"encuadreMovil":"55% 50%"},{"f":"rainbow-03.jpg","titulo":"Rainbow","ano":"2022","tipo":"films","carpeta":"rainbow","enInicio":true,"w":2600,"h":1463}],
   "about": {
     "info": `# =====================================================================
 #  ABOUT  ·  cada dato relleno es una línea en la web (editado con el gestor)
@@ -989,4 +1000,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610211454 */
+/* gestor: 202610212109 */

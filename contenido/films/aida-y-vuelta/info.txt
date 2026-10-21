@@ -4,7 +4,7 @@ labor:
 director: Paco León
 productora: Telecinco
 mostrar_en_inicio: no
-encuadre_movil: 57% 50%
-portada: 19.jpg
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Aida%20Y%20Vuelta%20%EF%BD%9C%20Tr%C3%A1iler%20Oficial%20HD.%20En%20cines%2030%20de%20enero.%20%5BO82ibLC4bmM%5D_WEB.mp4
+encuadre_movil: 60% 50%
+portada: 19.jpg
 ---
