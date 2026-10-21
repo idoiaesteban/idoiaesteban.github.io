@@ -1,0 +1,9 @@
+titulo: Salitre
+año: 2027
+labor: 
+director: Norma Vila
+productora: Pris&Batty / Bondi
+mostrar_en_inicio: si
+encuadre_movil: 40% 50%
+video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Salitre%20-%20Trailer%20%5BgTY3GEnZl6M%5D_WEB_WEB_WEB.mp4
+---
