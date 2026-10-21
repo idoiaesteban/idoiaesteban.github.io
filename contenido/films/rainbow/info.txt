@@ -1,0 +1,9 @@
+titulo: Rainbow
+año: 2022
+labor: 
+director: Paco León
+productora: Telecinco / Netflix
+mostrar_en_inicio: si
+encuadre_movil: 90% 50%
+video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Rainbow_Trailer_oficial_Netflix_youtube_33nxp8T5orc_web.mp4
+---
