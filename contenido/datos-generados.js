@@ -977,6 +977,7 @@ delfines_contact: no
 menu_fuente: arial
 menu_mayusculas: si
 trailers_importados: 2026-10-20-r2-v3
+logo_borde: 2
 ---
 HELLÖ!
 
@@ -996,8 +997,9 @@ Enjoy!
 #  con ficha propia (sin fotos). Una URL opcional enlaza directamente fuera.
 #  Una línea por trabajo: año | título | labor | director o cliente | sección | URL | vídeo
 # =====================================================================
+
 `,
     "archivos": []
   }
 };
-/* gestor: 202610212109 */
+/* gestor: 202610212117 */
