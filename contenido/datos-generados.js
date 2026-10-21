@@ -637,18 +637,28 @@ labor:
 director: Álvaro Fernández Armero
 productora: Telecinco
 mostrar_en_inicio: no
-encuadre_movil: 15% 50%
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Si%20Yo%20Fuera%20Rico%20%EF%BD%9C%20Trailer%20%EF%BD%9C%20Paramount%20Pictures%20Spain%20%5BbJ3NHGKXEq0%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 15% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
-      {"f":"01.jpg","w":2600,"h":1086},
-      {"f":"02.jpg","w":2600,"h":1090},
-      {"f":"03.jpg","w":2600,"h":1090},
-      {"f":"04.jpg","w":2600,"h":1086},
-      {"f":"05.jpg","w":2600,"h":1084},
-      {"f":"06.jpg","w":2600,"h":1091},
-      {"f":"07.jpg","w":2600,"h":1088}]
+      {"f":"01.jpg","w":2600,"h":1090},
+      {"f":"02.jpg","w":2600,"h":1086},
+      {"f":"03.jpg","w":2600,"h":1084},
+      {"f":"04.jpg","w":2600,"h":1088},
+      {"f":"05.jpg","w":2600,"h":1091},
+      {"f":"06.jpg","w":2600,"h":1086},
+      {"f":"07.jpg","w":2600,"h":1086},
+      {"f":"08.jpg","w":2600,"h":1084},
+      {"f":"09.jpg","w":2600,"h":1086},
+      {"f":"10.jpg","w":2600,"h":1086},
+      {"f":"11.jpg","w":2600,"h":1086},
+      {"f":"12.jpg","w":2600,"h":1086},
+      {"f":"13.jpg","w":2600,"h":1088},
+      {"f":"14.jpg","w":2600,"h":1091},
+      {"f":"15.jpg","w":2600,"h":1088},
+      {"f":"16.jpg","w":2600,"h":1088}]
     },
   ],
   "series": [
@@ -979,4 +989,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610210943 */
+/* gestor: 202610211052 */
