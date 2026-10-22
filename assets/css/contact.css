@@ -20,11 +20,10 @@
 .contacto__lateral { min-width: 0; }
 .contacto__foto {
   display: block;
-  width: min(32vw, 640px);
-  aspect-ratio: 1.8;
-  object-fit: cover;
-  object-position: center;
-  margin: clamp(50px, 5vw, 100px) 0 0 clamp(150px, 24vw, 460px);
+  width: min(30vw, 600px);
+  height: auto;
+  object-fit: contain;
+  margin: clamp(70px, 8vw, 150px) 0 0 clamp(150px, 24vw, 460px);
   transform: rotate(-10deg);
 }
 
@@ -59,9 +58,13 @@
 .contacto__datos a { border-bottom: 1px solid transparent; transition: border-color .3s; }
 .contacto__datos a:hover { border-color: currentColor; }
 
-@media (min-width: 701px) and (max-width: 1300px) {
+@media (min-width: 1001px) and (max-width: 1300px) {
   .contacto__datos { padding-left: clamp(36px, 8vw, 76px); }
-  .contacto__foto { width: min(30vw, 380px); margin-left: clamp(30px, 10vw, 130px); }
+  .contacto__foto { width: min(30vw, 380px); margin-left: 23vw; }
+}
+@media (min-width: 701px) and (max-width: 1000px) {
+  .contacto__datos { padding-left: clamp(36px, 8vw, 76px); }
+  .contacto__foto { width: min(30vw, 340px); margin-left: clamp(30px, 10vw, 100px); }
 }
 
 @media (max-width: 700px) {
@@ -70,6 +73,6 @@
   .contacto__columna { order: 1; }
   .contacto__lateral { order: 2; width: 100%; }
   .contacto__datos { padding-left: 0; }
-  .contacto__foto { width: min(78vw, 420px); margin: 2.5em auto 1em; }
+  .contacto__foto { width: min(70vw, 360px); margin: 2.5em auto 1em; }
   .trabajos .fila { grid-template-columns: 3em 1fr; gap: 0 .8em; }
 }
