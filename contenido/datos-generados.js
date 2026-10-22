@@ -434,7 +434,7 @@ productora: Morena Films
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Que%20baje%20Dios%20y%20lo%20vea%20-%20Trailer%20(HD)%20%5BgTb0ApAlQ9c%5D_WEB_WEB_WEB.mp4
 encuadre_movil: 60% 50%
-portada: 17.jpg
+portada: 30.jpg
 ---
 `,
       "archivos": [
@@ -1015,4 +1015,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610212220 */
+/* gestor: 202610220858 */
