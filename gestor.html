@@ -129,6 +129,9 @@ button { cursor: pointer; background: none; border: 0; }
 .campo input, .campo select, .campo textarea { padding: 9px 10px; border: 1px solid var(--linea); border-radius: 8px; background: var(--papel); }
 .campo textarea { min-height: 80px; resize: vertical; }
 .campo--ancho { grid-column: 1 / -1; }
+.r2-subida { display: grid; gap: 8px; padding: 12px; border: 1px solid var(--linea); border-radius: 10px; background: var(--papel); }
+.r2-subida__botones { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.r2-subida progress { width: 100%; height: 8px; accent-color: var(--azul); }
 
 .fotos-barra { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
 .fotos-barra h3 { font-size: 15px; margin-right: auto; }
@@ -317,7 +320,7 @@ button { cursor: pointer; background: none; border: 0; }
   <!-- Arrastrar un .zip de actualización a cualquier parte de la ventana -->
   <div class="soltar-zip" id="soltarZip">Suelta aquí el .zip con la actualización de la web</div>
 
-  <script src="assets/js/trailers-idoia.js?v=202610221338"></script>
+  <script src="assets/js/trailers-idoia.js?v=202610221632"></script>
   <script>
 /* =====================================================================
    GESTOR DE LA WEB
@@ -346,7 +349,7 @@ button { cursor: pointer; background: none; border: 0; }
   // Versión de este gestor. Si en GitHub hay un gestor más nuevo (por ejemplo,
   // una pestaña abierta desde antes de instalar una actualización), no deja
   // publicar: guardaría las cosas a la manera antigua.
-  const VERSION_GESTOR = "2026-10-22-sitemap-manual-v1";
+  const VERSION_GESTOR = "2026-10-22-r2-trailers-v1";
 
   /* Las secciones de la web. Si algún día se añade otra, se pone aquí y en
      assets/js/ajustes.js (AJUSTES.secciones) y en los generadores de datos. */
@@ -1233,7 +1236,7 @@ button { cursor: pointer; background: none; border: 0; }
   /* ================= editor de proyecto ================= */
   let ed = null;   // { p, copia }
   function abrirEditor(p) {
-    ed = { p, fotos: p.fotos.slice(), portada: p.portada || null, movil: p.movil, cartel: p.cartel || null, campos: { ...p.info.campos }, texto: p.info.texto, sel: new Set(), ultimaQuitada: [] };
+    ed = { p, fotos: p.fotos.slice(), portada: p.portada || null, movil: p.movil, cartel: p.cartel || null, campos: { ...p.info.campos }, texto: p.info.texto, sel: new Set(), ultimaQuitada: [], subidaR2: null };
     pintarEditor();
     $("#editor").hidden = false;
   }
@@ -1250,6 +1253,7 @@ button { cursor: pointer; background: none; border: 0; }
   const portadaDe = (x) => (x.portada && x.fotos.includes(x.portada) && !x.portada.video ? x.portada : x.fotos.find((f) => !f.video) || null);
   function pintarEditor() {
     const { p, campos } = ed;
+    const r2Activo = !!ed.subidaR2;
     const scroll = $("#editor .panel")?.scrollTop || 0;
     const T = deTipo(p.tipo);
     const campo = (k, etiqueta, ph = "", ancho = false) => `<label class="campo ${ancho ? "campo--ancho" : ""}"><span>${etiqueta}</span><input data-campo="${k}" value="${esc(campos[k] || "")}" placeholder="${esc(ph)}"></label>`;
@@ -1257,9 +1261,9 @@ button { cursor: pointer; background: none; border: 0; }
     const si = /^(si|sí)$/i.test(campos.mostrar_en_inicio || "");
     $("#editor").innerHTML = `<div class="panel">
       <div class="panel__cabecera"><h2>${esc(campos.titulo || "Sin título")}</h2>
-        <button class="boton boton--peligro" data-ed="borrar">Eliminar ${T.uno}</button>
-        <button class="boton" data-ed="cancelar">Cancelar</button>
-        <button class="boton boton--principal" data-ed="guardar">Guardar</button></div>
+        <button class="boton boton--peligro" data-ed="borrar"${r2Activo ? " disabled" : ""}>Eliminar ${T.uno}</button>
+        <button class="boton" data-ed="cancelar"${r2Activo ? " disabled" : ""}>Cancelar</button>
+        <button class="boton boton--principal" data-ed="guardar"${r2Activo ? " disabled" : ""}>Guardar</button></div>
       <div class="campos">
         ${campo("titulo", "Título", "", false)}
         ${campo("ano", "Año", "2024")}
@@ -1268,6 +1272,16 @@ button { cursor: pointer; background: none; border: 0; }
         ${T.cliente ? campo("cliente", "Cliente / marca") : campo("productora", "Productora")}
         ${campo("formato", "Formato (opcional)", "Largometraje, serie…")}
         <label class="campo campo--ancho"><span>Vídeos de R2 (uno por línea, en orden)</span><textarea data-campo="video" rows="4" placeholder="https://…r2.dev/video.mp4">${esc(campos.video || "")}</textarea></label>
+        <div class="campo campo--ancho r2-subida">
+          <div class="r2-subida__botones">
+            <label class="boton boton--principal">＋ Subir tráileres MP4 a R2<input type="file" id="subirTrailerR2" accept="video/mp4,.mp4" multiple hidden${r2Activo ? " disabled" : ""}></label>
+            <button type="button" class="boton" id="r2Configurar"${r2Activo ? " disabled" : ""}>Cambiar conexión R2</button>
+            <button type="button" class="boton" id="r2Cancelar"${r2Activo ? "" : " hidden"}>Cancelar subida</button>
+          </div>
+          <span class="nota">Los enlaces se añaden arriba en el orden elegido. Después pulsa «Guardar» y «Publicar cambios».</span>
+          <p id="r2Estado" role="status">${esc(ed.subidaR2?.texto || "")}</p>
+          <progress id="r2Progreso" max="100" value="${ed.subidaR2?.progreso || 0}"${r2Activo ? "" : " hidden"}></progress>
+        </div>
         ${campo("imdb", "Enlace IMDb (opcional)")}
         <label class="campo"><span>Encuadre de la portada</span><select data-campo="encuadre">${encuadres.map(([v, t]) => `<option value="${v}"${(campos.encuadre || "") === v ? " selected" : ""}>${t}</option>`).join("")}</select></label>
         <label class="campo"><span>Pase del inicio</span><button type="button" class="interruptor ${si ? "si" : ""}" data-ed="inicio" style="justify-content:flex-start;padding:8px 0"><i></i><span>${si ? "Sale en el inicio" : "No sale en el inicio"}</span></button></label>
@@ -1377,6 +1391,9 @@ button { cursor: pointer; background: none; border: 0; }
     zona.addEventListener("dragleave", () => zona.classList.remove("activo"));
     zona.addEventListener("drop", (e) => { e.preventDefault(); zona.classList.remove("activo"); anadirArchivos([...e.dataTransfer.files]); });
     $("#subirFotos").addEventListener("change", (e) => anadirArchivos([...e.target.files]));
+    $("#subirTrailerR2").addEventListener("change", (e) => { const files = [...e.target.files]; e.target.value = ""; subirTrailersR2(files); });
+    $("#r2Configurar").addEventListener("click", configurarWorkerR2);
+    $("#r2Cancelar").addEventListener("click", () => ed?.subidaR2?.cancelador.abort());
     $("#subirCartel").addEventListener("change", async (e) => {
       const f = e.target.files[0]; if (!f) return;
       const r = await prepararArchivo(f); if (r && !r.video) ponerCartel(r);
@@ -1436,6 +1453,7 @@ button { cursor: pointer; background: none; border: 0; }
   }
 
   function guardarEditor() {
+    if (ed?.subidaR2) { aviso("Espera a que termine la subida a R2", true); return; }
     leerCamposEditor();
     const { p } = ed;
     if (!ed.campos.titulo) { aviso("Falta el título", true); return; }
@@ -1449,7 +1467,10 @@ button { cursor: pointer; background: none; border: 0; }
     cerrarEditor();
     pintar();
   }
-  function cerrarEditor() { $("#editor").hidden = true; $("#editor").innerHTML = ""; ed = null; }
+  function cerrarEditor() {
+    if (ed?.subidaR2) { aviso("Espera o cancela la subida a R2", true); return; }
+    $("#editor").hidden = true; $("#editor").innerHTML = ""; ed = null;
+  }
 
   function borrarProyectos(lista) {
     for (const p of lista) {
@@ -1936,6 +1957,135 @@ button { cursor: pointer; background: none; border: 0; }
     } finally { $("#sitemapReintentar").disabled = false; }
   }
 
+  /* ================= tráileres R2 (la ficha se publica con el flujo habitual) ================= */
+  const CLAVE_WORKER_R2 = () => "gestor_r2_worker_" + REPO;
+  const WORKER_R2_PREDETERMINADO = "https://idoia-video-upload.idoia-esteban.workers.dev";
+  const TAMANO_PARTE_R2 = 16 * 1024 * 1024;
+
+  function direccionWorkerR2(valor) {
+    let url;
+    try { url = new URL(String(valor || "").trim()); } catch (_) { throw new Error("Pega la URL HTTPS del Worker de Cloudflare."); }
+    if (url.protocol !== "https:" || url.username || url.password || url.search || url.hash ||
+        !/\.workers\.dev$|^idoiaesteban\.com$|^www\.idoiaesteban\.com$/i.test(url.hostname))
+      throw new Error("Usa la URL HTTPS del Worker de Idoia (workers.dev o idoiaesteban.com), no la dirección del bucket.");
+    return (url.origin + url.pathname).replace(/\/+$/, "");
+  }
+
+  async function peticionR2(worker, accion, metodo, datos, parametros = {}, signal) {
+    const url = new URL(worker + "/" + accion);
+    Object.entries(parametros).forEach(([k, v]) => url.searchParams.set(k, v));
+    const binario = datos instanceof Blob;
+    const r = await fetch(url, {
+      method: metodo, cache: "no-store", signal,
+      headers: { Authorization: "Bearer " + TOKEN, ...(datos ? { "Content-Type": binario ? "application/octet-stream" : "application/json" } : {}) },
+      body: datos ? (binario ? datos : JSON.stringify(datos)) : undefined,
+    });
+    const respuesta = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(respuesta.error || `Cloudflare respondió ${r.status}.`);
+    return respuesta;
+  }
+
+  async function configurarWorkerR2() {
+    const anterior = localStorage.getItem(CLAVE_WORKER_R2()) || WORKER_R2_PREDETERMINADO;
+    const valor = prompt("URL pública del Worker conectado al bucket videos-web (no la URL del bucket):", anterior);
+    if (valor === null) return null;
+    try {
+      const worker = direccionWorkerR2(valor);
+      const salud = await peticionR2(worker, "health", "GET");
+      if (!salud.ok || salud.bucket !== "videos-web") throw new Error("Ese Worker no está conectado al bucket videos-web.");
+      localStorage.setItem(CLAVE_WORKER_R2(), worker);
+      aviso("R2 conectado. Ya puedes subir tráileres MP4.");
+      if (ed) pintarEditor();
+      return worker;
+    } catch (e) { aviso(`No se pudo conectar a R2: ${e.message}`, true); return null; }
+  }
+
+  function estadoSubidaR2(texto, progreso) {
+    if (!ed?.subidaR2) return;
+    ed.subidaR2.texto = texto;
+    ed.subidaR2.progreso = progreso;
+    const estado = $("#r2Estado"), barra = $("#r2Progreso");
+    if (estado) estado.textContent = texto;
+    if (barra) { barra.hidden = false; barra.value = progreso; }
+  }
+
+  async function subirTrailersR2(archivos) {
+    if (!ed || !archivos.length || ed.subidaR2) return;
+    if (archivos.some((f) => !/\.mp4$/i.test(f.name) || !f.size)) {
+      aviso("Selecciona solo archivos MP4 que no estén vacíos.", true); return;
+    }
+    let worker = localStorage.getItem(CLAVE_WORKER_R2()) || WORKER_R2_PREDETERMINADO;
+    if (!worker || !ed) return;
+    leerCamposEditor();
+    const editorOriginal = ed;
+    const cancelador = new AbortController();
+    ed.subidaR2 = { cancelador, texto: "Conectando con R2…", progreso: 0 };
+    pintarEditor();
+    const tamanoTotal = archivos.reduce((n, f) => n + f.size, 0);
+    let enviados = 0;
+    let completados = 0;
+    try {
+      for (const archivo of archivos) {
+        if (cancelador.signal.aborted) throw new DOMException("Cancelada", "AbortError");
+        estadoSubidaR2(`Preparando ${archivo.name}…`, Math.round(enviados / tamanoTotal * 100));
+        const inicio = await peticionR2(worker, "start", "POST", {
+          tipo: editorOriginal.p.tipo, carpeta: editorOriginal.p.carpeta, nombre: archivo.name, size: archivo.size,
+        }, {}, cancelador.signal);
+        const { key, uploadId } = inicio;
+        const partes = [], bloque = Math.min(inicio.partSize || TAMANO_PARTE_R2, TAMANO_PARTE_R2);
+        try {
+          for (let offset = 0, numero = 1; offset < archivo.size; offset += bloque, numero++) {
+            if (cancelador.signal.aborted) throw new DOMException("Cancelada", "AbortError");
+            const pedazo = archivo.slice(offset, offset + bloque, "application/octet-stream");
+            let parte;
+            for (let intento = 0; intento < 3; intento++) {
+              try {
+                parte = await peticionR2(worker, "part", "PUT", pedazo,
+                  { key, uploadId, partNumber: numero }, cancelador.signal);
+                break;
+              } catch (e) {
+                if (cancelador.signal.aborted || intento === 2) throw e;
+                await new Promise((ok) => setTimeout(ok, 1000 * (intento + 1)));
+              }
+            }
+            if (parte.partNumber !== numero || !parte.etag) throw new Error("R2 no confirmó una parte del vídeo.");
+            partes.push({ partNumber: parte.partNumber, etag: parte.etag });
+            estadoSubidaR2(`Subiendo ${archivo.name} · ${Math.round((offset + pedazo.size) / archivo.size * 100)} %`,
+              Math.round((enviados + offset + pedazo.size) / tamanoTotal * 100));
+          }
+          const fin = await peticionR2(worker, "finish", "POST", { parts: partes }, { key, uploadId }, cancelador.signal);
+          if (!/^https:\/\//.test(fin.url || "")) throw new Error("R2 no devolvió un enlace público válido.");
+          enviados += archivo.size;
+          completados++;
+          if (ed !== editorOriginal) throw new Error("La ficha se cerró durante la subida.");
+          leerCamposEditor();
+          const urls = (ed.campos.video || "").split(/\n+/).map((v) => v.trim()).filter(Boolean);
+          if (!urls.includes(fin.url)) urls.push(fin.url);
+          ed.campos.video = urls.join("\n");
+          const area = $('[data-campo="video"]', $("#editor"));
+          if (area) area.value = ed.campos.video;
+        } catch (e) {
+          await peticionR2(worker, "abort", "DELETE", null, { key, uploadId }).catch(() => {});
+          throw e;
+        }
+      }
+      estadoSubidaR2(`${completados} tráiler${completados === 1 ? "" : "es"} en R2. Pulsa «Guardar» y después «Publicar cambios».`, 100);
+      aviso("Tráileres subidos a R2 y añadidos a la ficha.");
+    } catch (e) {
+      estadoSubidaR2(cancelador.signal.aborted ? "Subida cancelada. Los tráileres ya completados siguen en la ficha." :
+        `Error al subir: ${e.message}. Puedes repetir la operación.`, Math.round(enviados / tamanoTotal * 100));
+      if (!cancelador.signal.aborted) aviso(`Error de R2: ${e.message}`, true);
+    } finally {
+      if (ed === editorOriginal) {
+        ed.subidaR2 = null;
+        const cancelar = $("#r2Cancelar"), input = $("#subirTrailerR2");
+        if (cancelar) cancelar.hidden = true;
+        if (input) input.disabled = false;
+        for (const boton of $("#editor").querySelectorAll('[data-ed="guardar"], [data-ed="cancelar"], [data-ed="borrar"], #r2Configurar')) boton.disabled = false;
+      }
+    }
+  }
+
   /* ================= avisos ================= */
   let tAviso;
   function aviso(texto, mal) {
@@ -2139,7 +2289,7 @@ button { cursor: pointer; background: none; border: 0; }
   $("#zip").addEventListener("change", (e) => { const f = e.target.files[0]; e.target.value = ""; if (f) instalarZip(f); });
   $("#descartar").addEventListener("click", () => { if (confirm("¿Descartar todos los cambios sin publicar?")) cargar().catch(fallo); });
   $("#salir").addEventListener("click", () => { if (confirm("¿Olvidar el token en este ordenador?")) { localStorage.removeItem("gestor_token_" + REPO); location.reload(); } });
-  window.addEventListener("beforeunload", (e) => { if (hayCambios()) { e.preventDefault(); e.returnValue = ""; } });
+  window.addEventListener("beforeunload", (e) => { if (hayCambios() || ed?.subidaR2) { e.preventDefault(); e.returnValue = ""; } });
 
   /* ================= arranque ================= */
   function fallo(e) {
