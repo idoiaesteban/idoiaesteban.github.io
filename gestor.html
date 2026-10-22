@@ -113,6 +113,14 @@ button { cursor: pointer; background: none; border: 0; }
 /* ---- editor ---- */
 .capa { position: fixed; inset: 0; z-index: 50; background: #0006; display: flex; justify-content: flex-end; }
 .panel { width: min(1100px, 100%); height: 100%; overflow: auto; background: var(--fondo); padding: 24px 28px 100px; }
+.sitemap-panel { width: min(560px, 100%); }
+.sitemap-panel .cabecera { margin-bottom: 22px; }
+.sitemap-panel .sitemap-cifras { display: flex; gap: 12px; margin-bottom: 18px; }
+.sitemap-cifras span { flex: 1; padding: 16px; border: 1px solid var(--linea); border-radius: var(--radio); background: var(--papel); }
+.sitemap-cifras b { display: block; font-size: 24px; }
+#sitemapResumen p { margin: 12px 0; }
+#sitemapResumen ul { margin: 4px 0 16px 20px; overflow-wrap: anywhere; }
+.sitemap-panel__acciones { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 .panel__cabecera { position: sticky; top: -24px; z-index: 5; display: flex; align-items: center; gap: 10px; margin-bottom: 18px; padding: 10px 0; background: var(--fondo); }
 .panel__cabecera h2 { font-size: 20px; margin-right: auto; }
 .campos { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px 16px; margin-bottom: 26px; }
@@ -281,6 +289,7 @@ button { cursor: pointer; background: none; border: 0; }
     <footer class="pie">
       <span id="pendientes"></span>
       <button class="enlace" id="descartar" hidden>Descartar cambios</button>
+      <button class="enlace" id="actualizarSitemap" title="Previsualizar y actualizar manualmente sitemap.xml usando el contenido publicado">Actualizar sitemap</button>
       <button class="enlace" id="instalar" title="Sube a GitHub una versión nueva del código de la web (.zip). No toca tu contenido.">Instalar actualización (.zip)</button>
       <input type="file" id="zip" accept=".zip,application/zip" hidden>
       <button class="enlace" id="salir">Olvidar token</button>
@@ -292,12 +301,23 @@ button { cursor: pointer; background: none; border: 0; }
   <!-- Editor de un proyecto -->
   <div class="capa" id="editor" hidden></div>
 
+  <div class="capa" id="sitemapPanel" role="dialog" aria-modal="true" aria-labelledby="sitemapTitulo" hidden>
+    <section class="panel sitemap-panel">
+      <div class="cabecera"><h2 id="sitemapTitulo">Actualizar sitemap</h2><button class="enlace" id="sitemapCerrar">Cerrar</button></div>
+      <div id="sitemapResumen" aria-live="polite"></div>
+      <div class="sitemap-panel__acciones">
+        <button class="boton" id="sitemapReintentar">Reintentar</button>
+        <button class="boton boton--principal" id="sitemapConfirmar" disabled>Confirmar y publicar sitemap</button>
+      </div>
+    </section>
+  </div>
+
   <div class="aviso" id="aviso" hidden></div>
 
   <!-- Arrastrar un .zip de actualización a cualquier parte de la ventana -->
   <div class="soltar-zip" id="soltarZip">Suelta aquí el .zip con la actualización de la web</div>
 
-  <script src="assets/js/trailers-idoia.js?v=202610221057"></script>
+  <script src="assets/js/trailers-idoia.js?v=202610221338"></script>
   <script>
 /* =====================================================================
    GESTOR DE LA WEB
@@ -326,7 +346,7 @@ button { cursor: pointer; background: none; border: 0; }
   // Versión de este gestor. Si en GitHub hay un gestor más nuevo (por ejemplo,
   // una pestaña abierta desde antes de instalar una actualización), no deja
   // publicar: guardaría las cosas a la manera antigua.
-  const VERSION_GESTOR = "2026-10-21-logo-borde-v1";
+  const VERSION_GESTOR = "2026-10-22-sitemap-manual-v1";
 
   /* Las secciones de la web. Si algún día se añade otra, se pone aquí y en
      assets/js/ajustes.js (AJUSTES.secciones) y en los generadores de datos. */
@@ -1727,6 +1747,195 @@ button { cursor: pointer; background: none; border: 0; }
     }
   }
 
+  /* ================= sitemap manual (solo al pulsar el botón) ================= */
+  const SITEMAP_ORIGEN = "https://idoiaesteban.com";
+  const SITEMAP_PAGINAS = ["index.html", "work.html", "films.html", "series.html", "comercials.html", "videoclips.html", "contact.html"];
+  const SITEMAP_FOTO = /\.(?:jpe?g|png|webp|gif|avif)$/i;
+  let sitemapPreparado = null;
+
+  function leerSitemapAnterior(texto) {
+    if (!texto) return { entradas: new Map(), fecha: null };
+    const doc = new DOMParser().parseFromString(texto, "application/xml");
+    if (doc.getElementsByTagName("parsererror").length || doc.documentElement.localName !== "urlset")
+      throw new Error("El sitemap.xml publicado no es XML válido. No se ha modificado.");
+    const hijo = (el, nombre) => [...el.children].find((n) => n.localName === nombre);
+    const entradas = new Map();
+    let duplicados = false;
+    for (const nodo of [...doc.documentElement.children].filter((n) => n.localName === "url")) {
+      const loc = hijo(nodo, "loc")?.textContent?.trim();
+      if (!loc) continue;
+      if (entradas.has(loc)) { duplicados = true; continue; }
+      const imagenes = [...nodo.children].filter((n) => n.localName === "image")
+        .map((n) => hijo(n, "loc")?.textContent?.trim()).filter(Boolean);
+      entradas.set(loc, { imagenes, lastmod: hijo(nodo, "lastmod")?.textContent?.trim() || "" });
+    }
+    const fecha = (texto.match(/(?:Generado|Actualizado)[^\n]*?\b(\d{4}-\d{2}-\d{2})\b/i) || [])[1] || null;
+    return { entradas, fecha, duplicados };
+  }
+
+  const escaparXml = (valor) => String(valor).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+  const mismosValores = (a, b) => {
+    if (a.length !== b.length) return false;
+    const primero = [...a].sort(), segundo = [...b].sort();
+    return primero.every((v, i) => v === segundo[i]);
+  };
+
+  function generarSitemapManual(contenido, rutas, paginasHtml, anteriorTexto, fechaGeneracion) {
+    const anterior = leerSitemapAnterior(anteriorTexto);
+    const entradas = new Map();
+    for (const nombre of SITEMAP_PAGINAS) {
+      if (!rutas.has(nombre) || !paginasHtml.has(nombre)) continue;
+      const doc = new DOMParser().parseFromString(paginasHtml.get(nombre), "text/html");
+      if (/\bnoindex\b/i.test(doc.querySelector('meta[name="robots"]')?.content || "")) continue;
+      const esperado = SITEMAP_ORIGEN + (nombre === "index.html" ? "/" : "/" + nombre);
+      if (doc.querySelector('link[rel="canonical"]')?.href !== esperado) continue;
+      entradas.set(esperado, { imagenes: [] });
+    }
+    if (!entradas.has(SITEMAP_ORIGEN + "/")) throw new Error("No encuentro la portada pública y canónica en GitHub.");
+    if (!rutas.has("proyecto.html")) throw new Error("Falta proyecto.html en GitHub.");
+    const paginaProyecto = new DOMParser().parseFromString(paginasHtml.get("proyecto.html") || "", "text/html");
+    if (/\bnoindex\b/i.test(paginaProyecto.querySelector('meta[name="robots"]')?.content || ""))
+      throw new Error("La plantilla de proyectos está marcada noindex; no puedo incluir sus fichas.");
+    const tipos = ["films", "series", "comercials", "videoclips"];
+    for (const tipo of tipos) {
+      if (!Array.isArray(contenido[tipo])) throw new Error(`Falta la sección ${tipo} en contenido/datos-generados.js.`);
+      for (const p of contenido[tipo]) {
+        const carpeta = p?.carpeta;
+        if (typeof carpeta !== "string" || !carpeta || /[\\/]/.test(carpeta) || !Array.isArray(p.archivos))
+          throw new Error(`Datos de proyecto inválidos en ${tipo}.`);
+        const base = `contenido/${tipo}/${carpeta}/`;
+        if (!rutas.has(base + "info.txt")) throw new Error(`Falta ${base}info.txt en GitHub.`);
+        const loc = `${SITEMAP_ORIGEN}/proyecto.html?tipo=${encodeURIComponent(tipo)}&id=${encodeURIComponent(carpeta)}`;
+        if (entradas.has(loc)) throw new Error(`Proyecto duplicado en los datos: ${tipo}/${carpeta}.`);
+        const imagenes = [];
+        for (const a of p.archivos) {
+          const archivo = typeof a === "string" ? a : a?.f;
+          if (typeof archivo !== "string" || !archivo || /[\\/]/.test(archivo)) throw new Error(`Imagen inválida en ${base}.`);
+          if (!SITEMAP_FOTO.test(archivo)) continue;
+          if (!rutas.has(base + archivo)) throw new Error(`La web menciona ${base + archivo}, pero falta en GitHub.`);
+          const foto = `${SITEMAP_ORIGEN}/${["contenido", tipo, carpeta, archivo].map(encodeURIComponent).join("/")}`;
+          if (!imagenes.includes(foto)) imagenes.push(foto);
+        }
+        entradas.set(loc, { imagenes });
+      }
+    }
+    const nuevas = [...entradas.keys()].filter((url) => !anterior.entradas.has(url));
+    const eliminadas = [...anterior.entradas.keys()].filter((url) => !entradas.has(url));
+    const cambio = anterior.duplicados || nuevas.length > 0 || eliminadas.length > 0 || [...entradas].some(([url, e]) =>
+      !anterior.entradas.has(url) || !mismosValores(e.imagenes, anterior.entradas.get(url).imagenes));
+    const totalFotos = [...entradas.values()].reduce((n, e) => n + e.imagenes.length, 0);
+    if (!cambio) return { xml: anteriorTexto, cambio: false, paginas: entradas.size, fotos: totalFotos, nuevas, eliminadas, fechaAnterior: anterior.fecha };
+
+    // Conservar el orden previo de las fichas existentes; las nuevas van después.
+    const principales = [...entradas.keys()].filter((u) => !u.includes("/proyecto.html?"));
+    const proyectos = [...anterior.entradas.keys()].filter((u) => entradas.has(u) && u.includes("/proyecto.html?"));
+    for (const u of entradas.keys()) if (u.includes("/proyecto.html?") && !proyectos.includes(u)) proyectos.push(u);
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    xml += `<!-- Sitemap actualizado manualmente el ${fechaGeneracion}. -->\n`;
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
+    for (const url of principales.concat(proyectos)) {
+      const entrada = entradas.get(url), previa = anterior.entradas.get(url);
+      // La fecha antigua solo sigue siendo cierta cuando las imágenes de la URL no han cambiado.
+      const lastmod = previa && mismosValores(entrada.imagenes, previa.imagenes) && /^\d{4}-\d{2}-\d{2}$/.test(previa.lastmod)
+        ? previa.lastmod : "";
+      xml += `  <url>\n    <loc>${escaparXml(url)}</loc>\n`;
+      if (lastmod) xml += `    <lastmod>${lastmod}</lastmod>\n`;
+      for (const foto of entrada.imagenes) xml += `    <image:image><image:loc>${escaparXml(foto)}</image:loc></image:image>\n`;
+      xml += "  </url>\n";
+    }
+    xml += "</urlset>\n";
+    // Verificar el XML final antes de ofrecer publicarlo.
+    leerSitemapAnterior(xml);
+    return { xml, cambio: true, paginas: entradas.size, fotos: totalFotos, nuevas, eliminadas, fechaAnterior: anterior.fecha };
+  }
+
+  function pintarSitemap(resultado, error) {
+    const panel = $("#sitemapPanel"), cuerpo = $("#sitemapResumen"), confirmar = $("#sitemapConfirmar");
+    panel.hidden = false;
+    if (error) {
+      cuerpo.innerHTML = `<p class="error">${esc(error.message || error)}</p><p>Revisa la conexión o los archivos publicados y pulsa «Reintentar».</p>`;
+      confirmar.disabled = true;
+      return;
+    }
+    const lista = (urls) => urls.length ? `<ul>${urls.map((u) => `<li>${esc(u.replace(SITEMAP_ORIGEN, ""))}</li>`).join("")}</ul>` : "";
+    cuerpo.innerHTML = `<div class="sitemap-cifras"><span><b>${resultado.paginas}</b> páginas</span><span><b>${resultado.fotos}</b> fotografías</span></div>
+      <p><b>Nuevas páginas:</b> ${resultado.nuevas.length}</p>${lista(resultado.nuevas)}
+      <p><b>Páginas eliminadas:</b> ${resultado.eliminadas.length}</p>${lista(resultado.eliminadas)}
+      <p><b>Última actualización conocida:</b> ${esc(resultado.fechaAnterior || "No consta")}</p>
+      <p class="nota">Se leen los proyectos y las fotos publicados en GitHub. Solo se escribirá sitemap.xml al confirmar.</p>
+      ${resultado.cambio ? "" : '<p>El sitemap ya coincide con el contenido publicado.</p>'}`;
+    confirmar.disabled = !resultado.cambio;
+  }
+
+  async function prepararSitemapManual() {
+    sitemapPreparado = null;
+    $("#sitemapPanel").hidden = false;
+    $("#sitemapResumen").textContent = "Leyendo el contenido publicado en GitHub…";
+    $("#sitemapConfirmar").disabled = true;
+    $("#sitemapReintentar").disabled = true;
+    try {
+      if (REPO.toLowerCase() !== "idoiaesteban/idoiaesteban.github.io")
+        throw new Error("Esta utilidad está preparada para idoiaesteban/idoiaesteban.github.io.");
+      const ref = await gh("GET", `/repos/${REPO}/git/ref/heads/${RAMA}`);
+      const head = ref.object.sha;
+      if (head !== E.head) throw new Error("GitHub ha cambiado desde que abriste el gestor. Recarga el gestor antes de actualizar el sitemap.");
+      const respuesta = await gh("GET", `/repos/${REPO}/git/trees/${head}?recursive=1`);
+      if (respuesta.truncated) throw new Error("GitHub no devolvió el árbol completo. No se puede generar un sitemap seguro.");
+      const arbol = new Map(respuesta.tree.filter((t) => t.type === "blob").map((t) => [t.path, t.sha]));
+      if (!arbol.has("contenido/datos-generados.js")) throw new Error("Falta contenido/datos-generados.js en GitHub.");
+      const datosTexto = await leerBlobTexto(arbol.get("contenido/datos-generados.js"));
+      const datos = {};
+      new Function("window", datosTexto)(datos); // el mismo formato que ya carga el gestor
+      if (!datos.CONTENIDO) throw new Error("No se pudieron leer los datos publicados.");
+      const paginas = new Map();
+      await Promise.all(SITEMAP_PAGINAS.concat("proyecto.html").filter((p) => arbol.has(p))
+        .map(async (p) => paginas.set(p, await leerBlobTexto(arbol.get(p)))));
+      const anterior = arbol.has("sitemap.xml") ? await leerBlobTexto(arbol.get("sitemap.xml")) : "";
+      const resultado = generarSitemapManual(datos.CONTENIDO, arbol, paginas, anterior, new Date().toISOString().slice(0, 10));
+      sitemapPreparado = { ...resultado, anterior, head, shaAnterior: arbol.get("sitemap.xml") || null };
+      pintarSitemap(resultado);
+    } catch (e) { console.error(e); pintarSitemap(null, e); }
+    finally { $("#sitemapReintentar").disabled = false; }
+  }
+
+  async function publicarSitemapManual() {
+    const pendiente = sitemapPreparado;
+    if (!pendiente || !pendiente.cambio) return;
+    const boton = $("#sitemapConfirmar"); boton.disabled = true;
+    $("#sitemapReintentar").disabled = true;
+    $("#sitemapResumen").insertAdjacentHTML("beforeend", '<p id="sitemapProgreso">Publicando únicamente sitemap.xml en GitHub…</p>');
+    try {
+      const ref = await gh("GET", `/repos/${REPO}/git/ref/heads/${RAMA}`);
+      if (ref.object.sha !== pendiente.head || E.head !== pendiente.head)
+        throw new Error("El repositorio cambió después de la previsualización. Pulsa «Reintentar» para revisar el sitemap de nuevo.");
+      if (pendiente.xml === pendiente.anterior) {
+        $("#sitemapProgreso").textContent = "El sitemap ya estaba actualizado. No se ha creado ningún commit.";
+        return;
+      }
+      const commit = await gh("GET", `/repos/${REPO}/git/commits/${pendiente.head}`);
+      const blob = await gh("POST", `/repos/${REPO}/git/blobs`, { content: textoAB64(pendiente.xml), encoding: "base64" });
+      if (blob.sha === pendiente.shaAnterior) {
+        $("#sitemapProgreso").textContent = "El sitemap ya estaba actualizado. No se ha creado ningún commit.";
+        return;
+      }
+      const arbol = await gh("POST", `/repos/${REPO}/git/trees`, { base_tree: commit.tree.sha,
+        tree: [{ path: "sitemap.xml", mode: "100644", type: "blob", sha: blob.sha }] });
+      const nuevo = await gh("POST", `/repos/${REPO}/git/commits`, { message: "Actualizar sitemap manualmente desde el gestor", tree: arbol.sha, parents: [pendiente.head] });
+      await gh("PATCH", `/repos/${REPO}/git/refs/heads/${RAMA}`, { sha: nuevo.sha, force: false });
+      E.head = nuevo.sha;
+      E.arbol.set("sitemap.xml", blob.sha);
+      sitemapPreparado = null;
+      $("#sitemapProgreso").textContent = "GitHub aceptó el cambio en sitemap.xml. GitHub Pages puede tardar unos minutos en mostrarlo.";
+      aviso("GitHub aceptó sitemap.xml. GitHub Pages puede tardar unos minutos.");
+      actualizarEstado();
+    } catch (e) {
+      console.error(e);
+      $("#sitemapProgreso").textContent = `Error: ${e.message}. Puedes pulsar «Reintentar» sin perder tus cambios del gestor.`;
+      boton.disabled = false;
+    } finally { $("#sitemapReintentar").disabled = false; }
+  }
+
   /* ================= avisos ================= */
   let tAviso;
   function aviso(texto, mal) {
@@ -1907,6 +2116,10 @@ button { cursor: pointer; background: none; border: 0; }
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && ed) { cerrarEditor(); pintar(); } });
 
   $("#publicar").addEventListener("click", publicar);
+  $("#actualizarSitemap").addEventListener("click", prepararSitemapManual);
+  $("#sitemapReintentar").addEventListener("click", prepararSitemapManual);
+  $("#sitemapConfirmar").addEventListener("click", publicarSitemapManual);
+  $("#sitemapCerrar").addEventListener("click", () => { $("#sitemapPanel").hidden = true; });
   $("#instalar").addEventListener("click", () => $("#zip").click());
   (function soltarZipEnLaVentana() {
     const capa = $("#soltarZip");
