@@ -251,8 +251,9 @@ labor:
 director: Zoe Berriatúa
 productora: Pokeepsie Films
 mostrar_en_inicio: si
-encuadre_movil: 35% 50%
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/En%20las%20estrellas%20-%20Trailer%20(HD)%20%5BeTCQx5vYjYc%5D_WEB_WEB_WEB.mp4
+encuadre_movil: 35% 50%
+portada: 01.jpg
 ---
 `,
       "archivos": [
@@ -289,7 +290,33 @@ video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/En%20las%20estrellas%
       {"f":"31.jpg","w":2600,"h":1950},
       {"f":"32.jpg","w":2600,"h":1950},
       {"f":"33.jpg","w":2600,"h":1950},
-      {"f":"34.jpg","w":2600,"h":1950}]
+      {"f":"34.jpg","w":2600,"h":1950},
+      {"f":"35.jpg","w":1950,"h":2600},
+      {"f":"36.jpg","w":1950,"h":2600},
+      {"f":"37.jpg","w":2600,"h":1084},
+      {"f":"38.jpg","w":2600,"h":1082},
+      {"f":"39.jpg","w":2600,"h":1082},
+      {"f":"40.jpg","w":2600,"h":1087},
+      {"f":"41.jpg","w":2600,"h":1081},
+      {"f":"42.jpg","w":2600,"h":1070},
+      {"f":"43.jpg","w":2600,"h":1081},
+      {"f":"44.jpg","w":2600,"h":1081},
+      {"f":"45.jpg","w":2600,"h":1082},
+      {"f":"46.jpg","w":2600,"h":1084},
+      {"f":"47.jpg","w":2600,"h":1081},
+      {"f":"48.jpg","w":2600,"h":1074},
+      {"f":"49.jpg","w":2600,"h":1068},
+      {"f":"50.jpg","w":2600,"h":1084},
+      {"f":"51.jpg","w":2600,"h":1082},
+      {"f":"52.jpg","w":2600,"h":1074},
+      {"f":"53.jpg","w":2600,"h":1086},
+      {"f":"54.jpg","w":2600,"h":1084},
+      {"f":"55.jpg","w":2600,"h":1080},
+      {"f":"56.jpg","w":2600,"h":1081},
+      {"f":"57.jpg","w":2600,"h":1075},
+      {"f":"58.jpg","w":2600,"h":1078},
+      {"f":"59.jpg","w":2600,"h":1077},
+      {"f":"60.jpg","w":2600,"h":1085}]
     },
     {
       "carpeta": "extraterrestre",
@@ -638,7 +665,7 @@ portada: 01.jpg
       "info": `titulo: Si yo fuera rico
 año: 2019
 labor: 
-director: Álvaro Fernández Armero
+director: Álvaro Fdez. Armero
 productora: Telecinco
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Si%20Yo%20Fuera%20Rico%20%EF%BD%9C%20Trailer%20%EF%BD%9C%20Paramount%20Pictures%20Spain%20%5BbJ3NHGKXEq0%5D_WEB_WEB_WEB.mp4
@@ -1015,4 +1042,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610220858 */
+/* gestor: 202610221057 */
