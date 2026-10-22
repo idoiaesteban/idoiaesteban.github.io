@@ -320,7 +320,7 @@ button { cursor: pointer; background: none; border: 0; }
   <!-- Arrastrar un .zip de actualización a cualquier parte de la ventana -->
   <div class="soltar-zip" id="soltarZip">Suelta aquí el .zip con la actualización de la web</div>
 
-  <script src="assets/js/trailers-idoia.js?v=202610222101"></script>
+  <script src="assets/js/trailers-idoia.js?v=202610222134"></script>
   <script>
 /* =====================================================================
    GESTOR DE LA WEB
@@ -1267,7 +1267,7 @@ button { cursor: pointer; background: none; border: 0; }
       <div class="campos">
         ${campo("titulo", "Título", "", false)}
         ${campo("ano", "Año", "2024")}
-        ${campo("labor", "Labor", "Product Designer")}
+        ${campo("labor", "Labor", "Production designer")}
         ${campo("director", "Dirección", "Nombre del director/a")}
         ${T.cliente ? campo("cliente", "Cliente / marca") : campo("productora", "Productora")}
         ${campo("formato", "Formato (opcional)", "Largometraje, serie…")}
@@ -1490,7 +1490,7 @@ button { cursor: pointer; background: none; border: 0; }
     while (E.proyectos.some((p) => p.tipo === tipo && p.carpeta === carpeta) || E.borrados.some((p) => p.tipo === tipo && p.carpeta === carpeta)) carpeta = `${ano}-${slug(titulo)}-${n++}`;
     const p = {
       tipo, carpeta, nuevo: true, sucio: false, fotos: [], portada: null, movil: null, cartel: null, rutasOriginales: [], archivosOriginales: [],
-      info: { campos: { titulo, ano, labor: "Product Designer", director: "", mostrar_en_inicio: "no" }, orden: [], texto: "" },
+      info: { campos: { titulo, ano, labor: "", director: "", mostrar_en_inicio: "no" }, orden: [], texto: "" },
     };
     E.proyectos.push(p);
     abrirEditor(p);
