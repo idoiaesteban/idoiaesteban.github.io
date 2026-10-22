@@ -116,7 +116,7 @@
     if (/\.(mp4|webm|mov|m4v)$/i.test(m.f)) {
       celda.innerHTML = `<video src="${m.url}" muted loop playsinline autoplay preload="metadata"></video>`;
     } else {
-      celda.innerHTML = `<img src="${m.url}" alt="${esc(p.titulo)} — ${i + 1}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async"
+      celda.innerHTML = `<img src="${m.url}" alt="${esc(p.titulo)}${p.ano ? ` (${esc(p.ano)})` : ""}${Web.about && Web.about.nombre ? ` — ${esc(Web.about.nombre)}` : ""} — ${i + 1}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async"
                           style="object-position:center">`;
       const n = fotos.indexOf(m.url);
       celda.addEventListener("click", () => Comun.visor(fotos, n));

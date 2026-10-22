@@ -1,0 +1,10 @@
+# robots.txt · idoiaesteban.com
+# Todo el portfolio se puede rastrear (también las fotos de contenido/ y los
+# scripts, que Google necesita para ver las páginas como un visitante).
+# El gestor lleva su propia etiqueta noindex.
+
+User-agent: *
+Allow: /
+Disallow: /gestor-accesos/
+
+Sitemap: https://idoiaesteban.com/sitemap.xml
