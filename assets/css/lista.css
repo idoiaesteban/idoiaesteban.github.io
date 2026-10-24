@@ -142,14 +142,18 @@
 @media (hover: hover) and (pointer: fine) {
   .modo-cartel .celda-proyecto__txt { display: flex; }
 }
-/* En el móvil todos los textos empiezan en la misma línea: a 1/3 de la
-   imagen (si hay cartel, justo después del cartel). Así quedan alineados. */
+/* En móvil, todos los títulos, créditos y años parten del mismo margen
+   izquierdo de la imagen, haya cartel o no. */
 @media (max-width: 700px) {
   .modo-cartel .celda__texto {
     font-size: var(--cartel-texto-tam-movil);
     gap: 1em;
-    left: var(--cartel-texto-izq-movil); right: var(--cartel-texto-margen);
+    left: .8rem; right: .8rem;
     width: auto; max-width: none;
+    text-align: left;
   }
-  .modo-cartel .con-cartel .celda__texto { left: calc(37.84% + var(--cartel-texto-margen)); }
+  .modo-cartel .celda-proyecto.sin-portada .celda__texto {
+    align-items: flex-start;
+    text-align: left;
+  }
 }
