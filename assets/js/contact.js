@@ -25,7 +25,8 @@
   //    (las secciones con enContact: false en ajustes.js no salen, p. ej. Videoclips)
   const FILTROS = [["todo", T.todo]].concat(AJUSTES.secciones.filter((s) => s.enContact !== false).map((s) => [s.id, s.titulo]));
   const filtros = document.getElementById("filtros");
-  filtros.innerHTML = FILTROS.map(([k, v]) => `<button data-f="${k}">${v}</button>`).join("");
+  filtros.innerHTML = FILTROS.map(([k, v]) => `<button data-f="${k}">${v}</button>`).join("")
+    + `<a href="https://www.imdb.com/es/name/nm1897746/" target="_blank" rel="noopener noreferrer" aria-label="IMDb de Idoia Esteban">IMDb</a>`;
 
   // 3. la lista de trabajos
   const ol = document.getElementById("trabajos");

@@ -15,7 +15,8 @@
   try {
     const DOMINIO = "https://idoiaesteban.com/";
     const PERSONA = { "@id": DOMINIO + "#idoia-esteban-galvan" };
-    const NOMBRE = (window.Web && Web.about && Web.about.nombre) || "Idoia Esteban Galván";
+    const NOMBRE = "Idoia Esteban"; // nombre para metadatos; no modifica el logo visible
+    const NOMBRE_TITULO = "IDOIA ESTEBAN";
     const pagina = document.body.dataset.pagina;
     const absoluta = (u) => new URL(u, DOMINIO).href;
 
@@ -81,7 +82,7 @@
     const hayVideo = !!(p.video && String(p.video).trim());
 
     // título de la pestaña y de Google
-    const titulo = `${p.titulo}${p.ano ? ` (${p.ano})` : ""} · ${NOMBRE} · Production Designer`;
+    const titulo = `${p.titulo}${p.ano ? ` (${p.ano})` : ""} · ${NOMBRE_TITULO} · Production Designer`;
     document.title = titulo;
 
     // descripción: solo datos que ya están en la ficha

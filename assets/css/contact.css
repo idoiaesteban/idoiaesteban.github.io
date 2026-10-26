@@ -29,10 +29,10 @@
 
 .contacto__texto p + p { margin-top: 1em; }
 
-/* filtros de la lista: All · Films · Series · Commercials · Videoclips */
+/* filtros de la lista e IMDb: All · Films · Series · Commercials · IMDb */
 .filtros { display: flex; flex-wrap: wrap; gap: 1.2em; margin: 2.6em 0 1.2em; }
-.filtros button { color: var(--color-suave); font: inherit; transition: color .3s; }
-.filtros button.activo, .filtros button:hover { color: var(--color-tinta); }
+.filtros button, .filtros a { color: var(--color-suave); font: inherit; transition: color .3s; }
+.filtros button.activo, .filtros button:hover, .filtros a:hover, .filtros a:focus-visible { color: var(--color-tinta); }
 
 /* la lista, con scroll propio (alto: ajustes.css) y un fundido abajo */
 .trabajos {
