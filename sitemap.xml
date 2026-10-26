@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generado con generar-sitemap.js el 2026-10-22. Vuelve a generarlo cuando añadas o quites trabajos en el gestor. -->
+<!-- Sitemap actualizado manualmente el 2026-10-26. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://idoiaesteban.com/</loc>
@@ -22,13 +22,14 @@
     <lastmod>2026-10-22</lastmod>
   </url>
   <url>
+    <loc>https://idoiaesteban.com/videoclips.html</loc>
+  </url>
+  <url>
     <loc>https://idoiaesteban.com/contact.html</loc>
     <lastmod>2026-10-22</lastmod>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/13.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/03.jpg</image:loc></image:image>
@@ -40,10 +41,11 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/09.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/11.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/2026-el-acercamiento-de-la-mujer-cactus-y-el-hombre-globo/13.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=salitre</loc>
-    <lastmod>2026-10-22</lastmod>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/03.jpg</image:loc></image:image>
@@ -56,11 +58,51 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/21.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/22.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/23.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/24.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/25.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/26.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/27.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/28.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/29.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/30.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/31.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/32.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/33.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/34.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/35.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/36.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/37.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/38.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/39.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/40.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/41.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/42.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/43.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/44.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/45.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/46.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/47.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/48.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/49.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/50.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/51.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/52.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/53.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/salitre/54.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=aida-y-vuelta</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/19.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/03.jpg</image:loc></image:image>
@@ -72,10 +114,33 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/09.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/11.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/21.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/22.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/23.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/24.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/25.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/26.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/27.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/28.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/29.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/30.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/31.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/32.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/33.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/34.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/aida-y-vuelta/35.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=series&amp;id=superestar</loc>
-    <lastmod>2026-10-22</lastmod>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/03.jpg</image:loc></image:image>
@@ -88,6 +153,97 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/100.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/101.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/102.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/103.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/11.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/21.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/22.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/23.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/24.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/25.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/26.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/27.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/28.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/29.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/30.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/31.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/32.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/33.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/34.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/35.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/36.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/37.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/38.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/39.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/40.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/41.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/42.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/43.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/44.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/45.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/46.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/47.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/48.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/49.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/50.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/51.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/52.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/53.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/54.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/55.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/56.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/57.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/58.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/59.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/60.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/61.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/62.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/63.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/64.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/65.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/66.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/67.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/68.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/69.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/71.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/72.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/73.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/74.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/75.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/76.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/77.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/78.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/79.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/80.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/81.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/82.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/83.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/84.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/85.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/86.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/87.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/88.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/89.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/90.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/91.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/92.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/93.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/94.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/95.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/96.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/97.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/98.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/superestar/99.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=comercials&amp;id=2024-asisa</loc>
@@ -96,12 +252,11 @@
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=daniela-forever</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/05.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/03.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/04.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/05.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/06.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/07.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/08.jpg</image:loc></image:image>
@@ -109,10 +264,68 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/21.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/22.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/23.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/24.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/25.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/26.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/27.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/28.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/29.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/30.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/31.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/32.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/33.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/34.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/35.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/36.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/37.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/38.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/39.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/40.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/41.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/42.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/43.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/44.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/45.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/46.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/47.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/48.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/49.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/50.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/51.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/52.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/53.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/54.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/55.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/56.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/57.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/58.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/59.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/60.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/61.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/62.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/63.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/64.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/65.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/66.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/67.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/68.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/69.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/daniela-forever/71.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=maridos</loc>
-    <lastmod>2026-10-22</lastmod>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/maridos/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/maridos/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/maridos/03.jpg</image:loc></image:image>
@@ -125,10 +338,10 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/maridos/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/maridos/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/maridos/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/maridos/13.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=la-piedad</loc>
-    <lastmod>2026-10-22</lastmod>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/03.jpg</image:loc></image:image>
@@ -141,10 +354,16 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/la-piedad/19.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=rainbow</loc>
-    <lastmod>2026-10-22</lastmod>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/03.jpg</image:loc></image:image>
@@ -157,11 +376,71 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/21.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/22.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/23.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/24.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/25.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/26.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/27.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/28.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/29.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/30.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/31.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/32.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/33.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/34.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/35.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/36.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/37.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/38.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/39.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/40.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/41.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/42.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/43.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/44.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/45.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/46.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/47.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/48.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/49.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/50.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/51.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/52.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/53.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/54.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/55.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/56.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/57.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/58.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/59.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/60.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/61.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/62.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/63.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/64.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/65.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/66.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/67.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/68.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/69.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/70.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/71.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/72.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/73.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/rainbow/74.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=a-mil-km-de-la-navidad</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/42.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/03.jpg</image:loc></image:image>
@@ -173,6 +452,58 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/09.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/11.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/21.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/22.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/23.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/24.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/25.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/26.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/27.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/28.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/29.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/30.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/31.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/32.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/33.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/34.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/35.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/36.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/37.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/38.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/39.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/40.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/41.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/42.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/43.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/44.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/45.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/46.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/47.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/48.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/49.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/50.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/51.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/52.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/53.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/54.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/55.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/56.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/57.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/58.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/59.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/60.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/61.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/62.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/a-mil-km-de-la-navidad/63.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=comercials&amp;id=2026-samsung</loc>
@@ -181,7 +512,6 @@
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=si-yo-fuera-rico</loc>
-    <lastmod>2026-10-22</lastmod>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/03.jpg</image:loc></image:image>
@@ -194,6 +524,10 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/si-yo-fuera-rico/16.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=comercials&amp;id=2021-vidal</loc>
@@ -202,7 +536,6 @@
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=series&amp;id=arde-madrid</loc>
-    <lastmod>2026-10-22</lastmod>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/03.jpg</image:loc></image:image>
@@ -215,10 +548,18 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/series/arde-madrid/21.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=en-las-estrellas</loc>
-    <lastmod>2026-10-22</lastmod>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/03.jpg</image:loc></image:image>
@@ -231,6 +572,34 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/21.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/22.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/23.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/24.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/25.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/26.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/27.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/28.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/29.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/30.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/31.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/32.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/33.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/34.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/35.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/36.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/37.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/38.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/39.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/en-las-estrellas/40.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=comercials&amp;id=twyp</loc>
@@ -250,10 +619,9 @@
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=pieles</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/03.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/02.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/03.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/04.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/05.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/06.jpg</image:loc></image:image>
@@ -263,11 +631,10 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/11.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/pieles/13.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=que-baje-dios-y-lo-vea</loc>
-    <lastmod>2026-10-22</lastmod>
-    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/30.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/03.jpg</image:loc></image:image>
@@ -279,6 +646,32 @@
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/09.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/10.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/11.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/12.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/13.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/14.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/15.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/16.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/17.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/18.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/19.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/20.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/21.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/22.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/23.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/24.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/25.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/26.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/27.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/28.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/29.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/30.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/31.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/32.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/33.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/34.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/35.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/36.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/que-baje-dios-y-lo-vea/37.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=comercials&amp;id=2017-volkswagen</loc>
@@ -288,10 +681,10 @@
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=los-miercoles-no-existen</loc>
     <lastmod>2026-10-22</lastmod>
-    <image:image><image:loc>https://idoiaesteban.com/contenido/films/los-miercoles-no-existen/04.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/los-miercoles-no-existen/01.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/los-miercoles-no-existen/02.jpg</image:loc></image:image>
     <image:image><image:loc>https://idoiaesteban.com/contenido/films/los-miercoles-no-existen/03.jpg</image:loc></image:image>
+    <image:image><image:loc>https://idoiaesteban.com/contenido/films/los-miercoles-no-existen/04.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://idoiaesteban.com/proyecto.html?tipo=films&amp;id=extraterrestre</loc>
