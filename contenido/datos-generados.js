@@ -3,6 +3,20 @@
 window.CONTENIDO = {
   "films": [
     {
+      "carpeta": "2026-la-mujer-cactus-y-el-hombre-globo",
+      "info": `titulo: LA MUJER CACTUS Y EL HOMBRE GLOBO
+año: 2027
+labor: 
+director: Kike Maíllo
+productora: Sábado Time / Netflix
+mostrar_en_inicio: no
+portada: 01.jpg
+---
+`,
+      "archivos": [
+      {"f":"01.jpg","w":2104,"h":1180}]
+    },
+    {
       "carpeta": "a-mil-km-de-la-navidad",
       "info": `titulo: A mil km de la Navidad
 año: 2021
@@ -1021,4 +1035,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610271534 */
+/* gestor: 202610271544 */
