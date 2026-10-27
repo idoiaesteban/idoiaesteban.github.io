@@ -1032,7 +1032,6 @@ FESTIVAL DE CINE Y COMEDIA TARAZONA Y EL MONCAYO, SPAIN  - Best Production Desi
 FESTIVAL INTERNACIONAL DE CORTOS DE VERÍN, SPAIN  - Best Production Design x Ulises (shortfilm)
 HOT SHORTS FILM FESTIVAL, ENGLAND  - Best Production Design x They will all die in space (shortfilm)
 CERVIGNANO FILM FESTIVAL, ITALY  - Best Production Design x They will all die in space
-
 `,
     "filmografia": `# =====================================================================
 #  FILMOGRAFÍA EXTRA  ·  trabajos que salen en la lista del about
@@ -1045,15 +1044,9 @@ CERVIGNANO FILM FESTIVAL, ITALY  - Best Production Design x They will all die i
 2013 | La buena hija |  | Javier Rebollo | films |  | 
 2015 | La matanza |  | Javier Rebollo | films |  | 
 2019 | El doble más quince |  | Mikel Rueda | films |  | 
-2020 | Way Down | Set Decorator | Jaume Balagueró | films |  | 
-2016 | Cuerpo de élite | Set decorator | Joaquín Mazón | films |  | 
-2011 | Atrapats | Art director | Miguel Puertas | films |  | 
-2010 | Cuatro estaciones | Art director | Marcel Barrena | films |  | 
-2010 | Trash | Art director | Carles Torras | films |  | 
-2007 | Dos rivales casi iguales | Asst. Set decorator | Miguel Ángel Buttini | films |  | 
-2007 | No digas nada | Props | Felipe Jiménez Luna | films |  | 
-2007 | Hotel Tívoli | Props | Antón Reixa | films |  | 
-2016 | Contratiempo | Set decorator (Bizkaia) | Oriol Pauló | films |  | 
+2020 | Way Down (set decorator) |  | Jaume Balagueró | films |  | 
+2016 | Cuerpo de élite (set decorator) |  | Joaquín Mazón | films |  | 
+2016 | Contratiempo (set decorator Bizkaia) |  | Oriol Pauló | films |  | 
 2018 | Just Eat |  | Maria Sosa | comercials |  | 
 2017 | Aquarius |  | Javier Tles | comercials |  | 
 2010 | El país |  | Nacho Vigalondo | comercials |  | 
@@ -1064,4 +1057,4 @@ CERVIGNANO FILM FESTIVAL, ITALY  - Best Production Design x They will all die i
     "archivos": []
   }
 };
-/* gestor: 202610271442 */
+/* gestor: 202610271446 */
