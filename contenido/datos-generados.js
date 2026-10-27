@@ -10,7 +10,7 @@ labor:
 director: Kike Maíllo
 productora: Sábado Time / Netflix
 mostrar_en_inicio: no
-portada: 01.jpg
+portada: 02.jpg
 ---
 `,
       "archivos": [
@@ -1036,4 +1036,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610271600 */
+/* gestor: 202610271604 */
