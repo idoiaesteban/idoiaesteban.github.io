@@ -2,6 +2,7 @@ titulo: Asisa
 año: 2024
 labor: 
 director: Miguel Angulo
+cliente: Agosto
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/ASISA%20Irreemplazable%20-%20%20spot%2045%E2%80%9D%20%5BBFk-iYM8izM%5D_WEB.mp4
 encuadre_movil: 14% 50%

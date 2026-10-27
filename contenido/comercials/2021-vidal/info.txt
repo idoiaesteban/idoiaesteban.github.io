@@ -2,6 +2,7 @@ titulo: Vidal
 año: 2019
 labor: 
 director: Eduardo Casanova
+cliente: Moriarty Digital
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Dipper%20Experiencia%20N%C2%BA%20263%20-%20The%20Implosion%20(Spot%20Dipper%20Ball%202019)%20%5BsvadQ81RYdY%5D_WEB_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Mi%20Querido%20Watson%20-%20Spot%E2%A7%B8Anuncio%20Golosinas%20Vidal%20Dipper%20Experiencia%20N%C2%BA%20375%20%5ByssygR3t64Q%5D_WEB_WEB_WEB.mp4
