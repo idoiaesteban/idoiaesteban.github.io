@@ -902,6 +902,7 @@ portada: 01.jpg
 año: 2019
 labor: 
 director: Martin Jalfen
+cliente: Blur
 mostrar_en_inicio: no
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Copiloto%20Samsung%20-%20Tecnolog%C3%ADa%20Con%20Prop%C3%B3sito%20%5BysnWjDsooIY%5D_WEB_WEB.mp4
 video: https://pub-e2d83271dfc84a8c9dac040cb75b4f25.r2.dev/Copiloto%20Samsung%20-%20Tecnolog%C3%ADa%20con%20Prop%C3%B3sito%20%5BJYMYWqMueys%5D_WEB_WEB_WEB.mp4
@@ -1046,4 +1047,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610271413 */
+/* gestor: 202610271429 */
