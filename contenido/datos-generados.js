@@ -1000,6 +1000,7 @@ menu_mayusculas: si
 trailers_importados: 2026-10-20-r2-v3
 logo_borde: 0
 menu_cursiva: no
+menu_tamano: 13
 ---
 HELLÖ!
 
@@ -1043,4 +1044,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610261522 */
+/* gestor: 202610271349 */
