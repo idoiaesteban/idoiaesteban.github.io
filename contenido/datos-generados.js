@@ -10,12 +10,11 @@ labor:
 director: Kike Maíllo
 productora: Sábado Time / Netflix
 mostrar_en_inicio: no
-portada: 02.jpg
+portada: 01.jpg
 ---
 `,
       "archivos": [
-      {"f":"01.jpg","w":1908,"h":1070},
-      {"f":"02.jpg","w":1908,"h":1070}]
+      {"f":"01.jpg","w":1908,"h":1070}]
     },
     {
       "carpeta": "a-mil-km-de-la-navidad",
@@ -1036,4 +1035,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610271604 */
+/* gestor: 202610271608 */
