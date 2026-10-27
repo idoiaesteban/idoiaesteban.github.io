@@ -1023,6 +1023,16 @@ In this site you can see a selection of my work.
 Please, feel free to contact :>
 
 Enjoy!
+
+
+Awards & Nominations
+
+PREMIOS ANILLOS DE ORO  - Nomination Best Production Design x Superestar
+FESTIVAL DE CINE Y COMEDIA TARAZONA Y EL MONCAYO, SPAIN  - Best Production Design x Lo siento mi amor
+FESTIVAL INTERNACIONAL DE CORTOS DE VERÍN, SPAIN  - Best Production Design x Ulises (shortfilm)
+HOT SHORTS FILM FESTIVAL, ENGLAND  - Best Production Design x They will all die in space (shortfilm)
+CERVIGNANO FILM FESTIVAL, ITALY  - Best Production Design x They will all die in space
+
 `,
     "filmografia": `# =====================================================================
 #  FILMOGRAFÍA EXTRA  ·  trabajos que salen en la lista del about
@@ -1054,4 +1064,4 @@ Enjoy!
     "archivos": []
   }
 };
-/* gestor: 202610271437 */
+/* gestor: 202610271442 */
