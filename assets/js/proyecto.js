@@ -80,7 +80,7 @@
     }
   } else { video.remove(); document.body.classList.add("sin-video"); }   // sin vídeo, la ficha baja para no chocar con el menú
 
-  /* ---- 2. ficha: título / directed by / produced by / año ---- */
+  /* ---- 2. ficha: título / directed by / produced by / año / extras ---- */
   const [titulo, dirigido, producido] = [
     esc(p.titulo),
     p.director ? `${T.dirigido} ${esc(p.director)}` : "",
@@ -89,7 +89,8 @@
   document.getElementById("ficha").innerHTML =
     `<h1 class="proyecto__titulo">${titulo}</h1>` +
     [dirigido, producido, [esc(p.ano), esc(p.labor)].filter(Boolean).join(" · ")]
-      .filter(Boolean).map((l) => `<p class="proyecto__linea">${l}</p>`).join("");
+      .filter(Boolean).map((l) => `<p class="proyecto__linea">${l}</p>`).join("") +
+    (p.extras ? `<p class="proyecto__linea proyecto__extras">${esc(p.extras)}</p>` : "");
 
   /* ---- 3. crew (dos columnas) ---- */
   const crew = document.getElementById("crew");
@@ -134,3 +135,4 @@
 
   Comun.autoScroll();
 })();
+

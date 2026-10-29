@@ -54,6 +54,12 @@
   letter-spacing: .06em;
   margin-top: .5em;
 }
+.proyecto__extras {
+  max-width: 60ch;
+  margin: clamp(30px, 5vh, 60px) auto 0;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
 
 /* ---- 3. Crew: a dos columnas ---- */
 .proyecto__crew {
@@ -120,3 +126,4 @@
   .proyecto__crew { columns: 1; }
   .proyecto__ficha { padding-top: clamp(30px, 5vh, 60px); }
 }
+

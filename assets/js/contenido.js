@@ -102,6 +102,7 @@
       director: info.director || info.directed_by || info.dirigido_por || "",
       productora: info.productora || info.produced_by || info.producido_por || "",
       cliente: info.cliente || "",
+      extras: info.extras || "",
       // "crew:" (se puede repetir una línea por persona) → lista
       crew: (info.crew || "").split("\n").map((l) => l.trim()).filter(Boolean),
       enInicio: esSi(info.mostrar_en_inicio),
@@ -229,3 +230,4 @@
 
   window.Web = { proyectos, proyecto, todos, tipos, home, about, filmografia, parrafos, leerInfo };
 })();
+

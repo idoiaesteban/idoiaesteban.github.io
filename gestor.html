@@ -320,7 +320,7 @@ button { cursor: pointer; background: none; border: 0; }
   <!-- Arrastrar un .zip de actualización a cualquier parte de la ventana -->
   <div class="soltar-zip" id="soltarZip">Suelta aquí el .zip con la actualización de la web</div>
 
-  <script src="assets/js/trailers-idoia.js?v=202610291444"></script>
+  <script src="assets/js/trailers-idoia.js?v=202610291548"></script>
   <script>
 /* =====================================================================
    GESTOR DE LA WEB
@@ -420,7 +420,7 @@ button { cursor: pointer; background: none; border: 0; }
     return { campos, orden, texto: lineas.slice(i).join("\n").trim() };
   }
   const NOMBRE_CLAVE = { ano: "año" };
-  const ORDEN_CLAVES = ["titulo", "ano", "labor", "director", "productora", "cliente", "formato", "mostrar_en_inicio", "video", "crew", "encuadre", "encuadre_movil", "letras_inicio", "orden", "imdb", "color_letra", "color_borde"];
+  const ORDEN_CLAVES = ["titulo", "ano", "labor", "director", "productora", "cliente", "formato", "extras", "mostrar_en_inicio", "video", "crew", "encuadre", "encuadre_movil", "letras_inicio", "orden", "imdb", "color_letra", "color_borde"];
   const SIEMPRE = ["titulo", "ano", "labor", "director", "mostrar_en_inicio"];
   function infoATexto(p) {
     const c = p.info.campos, lineas = [];
@@ -1271,6 +1271,7 @@ button { cursor: pointer; background: none; border: 0; }
         ${campo("director", "Dirección", "Nombre del director/a")}
         ${T.cliente ? campo("cliente", "Cliente / marca") : campo("productora", "Productora")}
         ${campo("formato", "Formato (opcional)", "Largometraje, serie…")}
+        <label class="campo campo--ancho"><span>Extras (texto centrado debajo del año)</span><textarea data-campo="extras" rows="2" placeholder="Premios, nominaciones u otros datos…">${esc(campos.extras || "")}</textarea></label>
         <label class="campo campo--ancho"><span>Vídeos de R2 (uno por línea, en orden)</span><textarea data-campo="video" rows="4" placeholder="https://…r2.dev/video.mp4">${esc(campos.video || "")}</textarea></label>
         <div class="campo campo--ancho r2-subida">
           <div class="r2-subida__botones">
@@ -2324,3 +2325,4 @@ button { cursor: pointer; background: none; border: 0; }
   </script>
 </body>
 </html>
+
