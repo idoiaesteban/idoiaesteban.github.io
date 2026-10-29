@@ -20,11 +20,11 @@
 .contacto__lateral { min-width: 0; }
 .contacto__foto {
   display: block;
-  width: min(30vw, 600px);
+  width: min(46.25vw, 740px);
   height: auto;
   object-fit: contain;
-  margin: clamp(70px, 8vw, 150px) 0 0 clamp(150px, 24vw, 460px);
-  transform: rotate(-10deg);
+  margin: clamp(70px, 5.5vw, 90px) 0 0 clamp(60px, 7.5vw, 120px);
+  transform: rotate(-5.4deg);
 }
 
 .contacto__texto p + p { margin-top: 1em; }
@@ -60,11 +60,11 @@
 
 @media (min-width: 1001px) and (max-width: 1300px) {
   .contacto__datos { padding-left: clamp(36px, 8vw, 76px); }
-  .contacto__foto { width: min(30vw, 380px); margin-left: 23vw; }
+  .contacto__foto { width: 44vw; margin-left: 4vw; }
 }
 @media (min-width: 701px) and (max-width: 1000px) {
   .contacto__datos { padding-left: clamp(36px, 8vw, 76px); }
-  .contacto__foto { width: min(30vw, 340px); margin-left: clamp(30px, 10vw, 100px); }
+  .contacto__foto { width: 42vw; margin: clamp(45px, 5.5vw, 70px) 0 0 clamp(25px, 3vw, 40px); }
 }
 
 @media (max-width: 700px) {
